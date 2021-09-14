@@ -383,14 +383,29 @@ public class LoginTest {
             }
         }
 
-        mainPage.setCurrencyUSD(); // point 3
-        checkCurrency(Info.USD);
+        currency = null;
+        productList = null;
+        productPrice = null;
 
-        findResponse("dress"); // point 4
+        mainPage.setCurrencyUSD(); // point 3
+        //checkCurrency(Info.USD);
+
+        String response = "dress";
+        download_wait();
+        findResponse(response); // point 4
         download_wait();
         resultSearchPage.selectSortbyPriceDesc();
         resultSearchPage.setShowResultsPerPage_60();
         download_wait();
+
+        List<WebElement> products = productsObject.itemFinder();
+        List<WebElement> productsName = products.stream()
+                .map(productsObject::nameFinder)
+                .collect(Collectors.toList());
+
+        for (WebElement x : productsName) {
+            assertTrue(x.getText().toLowerCase().contains(response.toLowerCase()));
+        }
 
 
     }
