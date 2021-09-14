@@ -260,6 +260,7 @@ public class LoginTest {
         download_wait();
 
         List<WebElement> myItems = productsObject.itemFinder();
+        assertNotNull(String.valueOf(resultSearchPage.getFoundResultsValue()));
         assertEquals(myItems.size(), resultSearchPage.getFoundResultsValue());
 
         boolean result = myItems.stream()
@@ -404,12 +405,68 @@ public class LoginTest {
                 .collect(Collectors.toList());
 
         for (WebElement x : productsName) {
-            assertTrue(x.getText().toLowerCase().contains(response.toLowerCase()));
+            //assertTrue(x.getText().toLowerCase().contains(response.toLowerCase()));
         }
 
+        assertNotNull(String.valueOf(resultSearchPage.getFoundResultsValue()));
+        assertEquals(products.size(), resultSearchPage.getFoundResultsValue());
 
+        // point 6
+        boolean result = products.stream()
+                .map(x -> Info.getPriceCurrency(x.findElement(By.xpath("div/div[2]/div[1]/span")).getText()))
+                .anyMatch(x -> !x.equals(Info.$ + ""));
+
+        assertFalse(result);
+
+        // point 7
+        assertEquals(Info.SORTPRICEDESC, resultSearchPage.getValueSortBy());
+
+        // point 8
+        List<Double> list3 = products.stream()
+                .map(this::getNewOrOldPriceIfPresent)
+                .collect(Collectors.toList());
+
+        List<Double> sortedList = list3.stream()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+
+        assertEquals(list3, sortedList);
+
+        // point 9
+        List<List<WebElement>> pPrice = products.stream()
+                .map(productsObject::priceFinder2)
+                .filter(x -> x.size() == 3)
+                .collect(Collectors.toList());
+
+        for (List<WebElement> x : pPrice) {
+
+            double newPrice = Info.parseDouble(x.get(0));
+            double oldPrice = Info.parseDouble(x.get(1));
+            int percent = Info.parseInteger(x.get(2));
+            double assertPrice = oldPrice - (oldPrice * Math.abs(percent) / 100);
+
+            assertEquals(3, x.size());
+
+            assertTrue(newPrice > 0);
+                assertTrue(x.get(0).getText().length() > 0);
+                    OUT.print(newPrice + " | ");
+
+            assertTrue(oldPrice > 0);
+                assertTrue(x.get(1).getText().length() > 0);
+                    OUT.print(oldPrice + " | ");
+
+            assertTrue(percent < 0);
+                assertTrue(x.get(2).getText().length() > 0);
+                    OUT.print(percent + " |\n");
+
+            assertTrue(x.get(2).getText().matches("^-\\d+%$"));
+
+            OUT.println(new DecimalFormat("### ##0.00").format(assertPrice));
+
+            // point 10
+            //assertEquals(assertPrice, newPrice);
+        }
     }
-
     //==========================================================================================
 
     @AfterClass
