@@ -31,7 +31,7 @@ public class ConfProperties {
     }
 
     public static boolean getChose (String key) {
-        return Boolean.valueOf(PROPERTIES.getProperty(key));
+        return Boolean.parseBoolean(PROPERTIES.getProperty(key));
     }
 
 }

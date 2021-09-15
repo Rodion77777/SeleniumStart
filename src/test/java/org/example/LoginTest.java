@@ -105,6 +105,7 @@ public class LoginTest {
     }
 
     public void download_wait () {
+        // TODO: rebuild this method
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("html")));
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));// /html/body
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block_contact_infos\"]/div/ul/li[3]/i")));
@@ -326,9 +327,10 @@ public class LoginTest {
                 .filter(x -> x.size() == 3)
                 .collect(Collectors.toList());
 
-        OUT.println("pProduct.size : " + pProducts.size());
-        OUT.println("pPrice.size : " + pPrice.size());
-        OUT.println("pPrice.get(0).size() : " + pPrice.get(0).size());
+        // TODO: rebuild or delete
+        OUT.printf("\npProduct.size : %d", pProducts.size());
+        OUT.printf("\npPrice.size : %d", pPrice.size());
+        OUT.printf("\npPrice.get(0).size() : %d", pPrice.get(0).size());
         OUT.println(pPrice.get(0).get(0).getText());
         OUT.println(pPrice.get(0).get(1).getText());
         OUT.println(pPrice.get(0).get(2).getText());
@@ -359,6 +361,7 @@ public class LoginTest {
             assertTrue(x.get(2).getText().matches("^-\\d+%$"));
 
             OUT.println (template.format(assertPrice));
+            // TODO: uncomment line in the end of project
             //assertEquals(assertPrice, newPrice);
         }
     }
@@ -387,6 +390,7 @@ public class LoginTest {
         productPrice = null;
 
         mainPage.setCurrencyUSD(); // point 3
+        // TODO: uncomment line in the end of project
         //checkCurrency(Info.USD);
 
         String response = "dress";
@@ -403,8 +407,11 @@ public class LoginTest {
                 .collect(Collectors.toList());
 
         for (WebElement x : productsName) {
+            // TODO: uncomment line in the end of project
             //assertTrue(x.getText().toLowerCase().contains(response.toLowerCase()));
         }
+
+        productsName = null;
 
         assertNotNull(String.valueOf(resultSearchPage.getFoundResultsValue()));
         assertEquals(products.size(), resultSearchPage.getFoundResultsValue());
@@ -436,6 +443,9 @@ public class LoginTest {
                 .filter(x -> x.size() == 3)
                 .collect(Collectors.toList());
 
+        products = null;
+        list3 = null;
+
         for (List<WebElement> x : pPrice) {
 
             double newPrice = Info.parseDouble(x.get(0));
@@ -462,6 +472,7 @@ public class LoginTest {
             OUT.println(new DecimalFormat("### ##0.00").format(assertPrice));
 
             // point 10
+            // TODO: uncomment line in the end of project
             //assertEquals(assertPrice, newPrice);
         }
     }

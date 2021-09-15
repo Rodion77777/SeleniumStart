@@ -12,6 +12,7 @@ public class MainPage {
     public WebDriver driver;
 
 
+    // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"search_query_top\"]")
     private WebElement responseField;
 

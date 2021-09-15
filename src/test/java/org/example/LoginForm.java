@@ -16,15 +16,12 @@ public class LoginForm {
 
 
     @FindBy(xpath = "//*[@id=\"email\"]")
-    //@FindBy(xpath = "/html/body/div/div[2]/div/div[2]/div/div/div[2]/form/div/div[1]/input")
-    //@FindBy(xpath = "//*[contains(@id, 'email')]")
     private WebElement emailfield;
 
     @FindBy(xpath = "//*[contains(@id, 'passwd')]")
     private WebElement passwordfield;
 
     @FindBy(xpath = "//*[contains(@id, 'SubmitLogin')]")
-    //@FindBy(xpath = "//*[@id=\"SubmitLogin\"]")
     private WebElement passwordButton;
 
 

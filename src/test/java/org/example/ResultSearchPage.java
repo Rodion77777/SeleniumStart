@@ -9,6 +9,7 @@ public class ResultSearchPage {
 
     public WebDriver driver;
 
+    // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div[1]/div/a[1]")
     private WebElement quickViewLink;
 
