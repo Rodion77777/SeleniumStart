@@ -141,8 +141,8 @@ public class LoginTest {
         registrationForm.setDaysOfBirth(ConfProperties.getProperty("birthDays"));
         registrationForm.setMonthOfBirth(ConfProperties.getProperty("birthMonth"));
         registrationForm.setYearsOfBirth(ConfProperties.getProperty("birthYear"));
-        registrationForm.setNewsletter(ConfProperties.getChose("choseNewsLetter"));
-        registrationForm.setSpecialOffers(ConfProperties.getChose("choseSpecialOffers"));
+        registrationForm.setNewsletter(ConfProperties.getChoose("choseNewsLetter"));
+        registrationForm.setSpecialOffers(ConfProperties.getChoose("choseSpecialOffers"));
         registrationForm.clickSubmitAccount();
         checkUserName(ConfProperties.getProperty("username"));
         profilePage.userLogout();
