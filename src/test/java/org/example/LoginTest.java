@@ -363,8 +363,6 @@ public class LoginTest {
         }
     }
 
-    //==========================================================================================
-
     @Test
     public void generalTest () {
         driver.get(ConfProperties.getProperty("mainpage"));
@@ -467,7 +465,6 @@ public class LoginTest {
             //assertEquals(assertPrice, newPrice);
         }
     }
-    //==========================================================================================
 
     @AfterClass
     public static void tearDown () {
