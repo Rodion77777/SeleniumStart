@@ -23,7 +23,7 @@ public class AllMiniTests extends SetupTest {
         //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("page")));
 
-        // page load timeout engage.
+        // page load timeout engage?
         driver.get(driver.getCurrentUrl());
     }
 
@@ -68,9 +68,9 @@ public class AllMiniTests extends SetupTest {
 
         for (WebElement x : productPrice) {
             switch (Info.getPriceCurrency(x.getText())) {
-                case "" + Info.₴ -> assertEquals(Info.UAH, currency);
-                case "" + Info.$ -> assertEquals(Info.USD, currency);
-                case "" + Info.€ -> assertEquals(Info.EUR, currency);
+                case Info.₴ -> assertEquals(Info.UAH, currency);
+                case Info.$ -> assertEquals(Info.USD, currency);
+                case Info.€ -> assertEquals(Info.EUR, currency);
             }
         }
     }
@@ -125,7 +125,7 @@ public class AllMiniTests extends SetupTest {
 
         boolean result = myItems.stream()
                         .map(x -> Info.getPriceCurrency(x.findElement(By.xpath("div/div[2]/div[1]/span")).getText()))
-                        .anyMatch(x -> !x.equals(Info.$+""));
+                        .anyMatch(x -> !x.equals(Info.$));
 
         assertFalse(result);
     }

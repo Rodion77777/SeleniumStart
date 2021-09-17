@@ -49,9 +49,9 @@ public class GeneralTest extends SetupTest{
 
         for (WebElement x : productPrice) {
             switch (Info.getPriceCurrency(x.getText())) {
-                case "" + Info.₴ -> assertEquals(Info.UAH, currency);
-                case "" + Info.$ -> assertEquals(Info.USD, currency);
-                case "" + Info.€ -> assertEquals(Info.EUR, currency);
+                case Info.₴ -> assertEquals(Info.UAH, currency);
+                case Info.$ -> assertEquals(Info.USD, currency);
+                case Info.€ -> assertEquals(Info.EUR, currency);
             }
         }
 
@@ -89,7 +89,7 @@ public class GeneralTest extends SetupTest{
         // point 6
         boolean result = products.stream()
                 .map(x -> Info.getPriceCurrency(x.findElement(By.xpath("div/div[2]/div[1]/span")).getText()))
-                .anyMatch(x -> !x.equals(Info.$ + ""));
+                .anyMatch(x -> !x.equals(Info.$));
 
         assertFalse(result);
 
