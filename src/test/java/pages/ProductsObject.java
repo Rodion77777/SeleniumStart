@@ -1,4 +1,4 @@
-package org.example;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,10 +26,6 @@ public class ProductsObject {
 
     public List<WebElement> itemFinder () {
         return driver.findElements(By.xpath("//*[@id=\"center_column\"]/ul/li"));
-    }
-
-    public List<WebElement> priceFinder (List<WebElement> itemFinder, int numItem) {
-        return itemFinder.get(numItem).findElements(By.xpath("div/div[2]/div[1]/span"));
     }
 
     public List<WebElement> priceFinder2 (WebElement element) {

@@ -1,4 +1,4 @@
-package org.example;
+package maintest;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.*;
+import utils.ConfProperties;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;

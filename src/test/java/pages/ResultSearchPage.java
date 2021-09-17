@@ -1,9 +1,10 @@
-package org.example;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Info;
 
 public class ResultSearchPage {
 
@@ -54,9 +55,9 @@ public class ResultSearchPage {
         quickViewLink2.click();
     }
 
-    public String getProductName () {
-        return product_name.getText();
-    }
+    //public String getProductName () {
+        //return product_name.getText();
+    //}
 
     public boolean productNameIs (String response) {
         return product_name
