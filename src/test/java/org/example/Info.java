@@ -12,7 +12,7 @@ public class Info {
     public static final String EUR = "EUR";
 
     public static final String ₴ = "₴";
-    public static final String $ = "\\$";
+    public static final String $ = "$";
     public static final String € = "€";
 
     public static final String REGEXCURRENCY = "[" + $ + ₴ + € + "]";
