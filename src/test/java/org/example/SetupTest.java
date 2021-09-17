@@ -9,10 +9,9 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
-import java.io.PrintStream;
 import java.util.concurrent.TimeUnit;
 
-public abstract class SetupTest {
+public class SetupTest {
 
     public static MainPage mainPage;
     public static LoginForm loginForm;

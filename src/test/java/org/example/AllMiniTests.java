@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
-public class AllMiniTests extends SetupTest{
+public class AllMiniTests extends SetupTest {
     private static final PrintStream OUT = System.out;
 
     public void download_wait () {
@@ -20,14 +20,11 @@ public class AllMiniTests extends SetupTest{
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));// /html/body
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block_contact_infos\"]/div/ul/li[3]/i")));
 
+        //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("page")));
+
         // page load timeout engage.
         driver.get(driver.getCurrentUrl());
-    }
-
-    public void checkUserName (String uName) {
-        String user = profilePage.getUserName();
-        System.out.println(user);
-        assertEquals(uName, user);
     }
 
     public void findResponse (String response) {
@@ -35,58 +32,16 @@ public class AllMiniTests extends SetupTest{
         mainPage.clickSearchButton();
     }
 
-    @Test
-    public void registrationTest () {
-        /*
-         *      Website registration test.
-         *      To run the test, the registration data in the "conf.properties" file must be filled in!
-         */
-        registrationForm.inputemail(ConfProperties.getProperty("email"));
-        registrationForm.clickCreateButton();
-        registrationForm.genderChoice(ConfProperties.getProperty("gender"));
-        registrationForm.inputFirstName(ConfProperties.getProperty("firstname"));
-        registrationForm.inputLastName(ConfProperties.getProperty("lastname"));
-        registrationForm.checkEmail(ConfProperties.getProperty("email"));
-        registrationForm.inputPassword(ConfProperties.getProperty("password"));
-        registrationForm.setDaysOfBirth(ConfProperties.getProperty("birthDays"));
-        registrationForm.setMonthOfBirth(ConfProperties.getProperty("birthMonth"));
-        registrationForm.setYearsOfBirth(ConfProperties.getProperty("birthYear"));
-        registrationForm.setNewsletter(ConfProperties.getChoose("choseNewsLetter"));
-        registrationForm.setSpecialOffers(ConfProperties.getChoose("choseSpecialOffers"));
-        registrationForm.clickSubmitAccount();
-        checkUserName(ConfProperties.getProperty("username"));
-        profilePage.userLogout();
-        //loginForm.clickSetupButton();
+    public double getNewOrOldPriceIfPresent (WebElement element) {
+        return productsObject.priceFinder2(element).stream()
+                .map(Info::parseDouble)
+                .max(Double::compare)
+                .get();
     }
 
-    @Test
-    public void loginTest () {
-        /*
-         *      Website login test.
-         *      To run the test, the registration data in the "conf.properties" file must be filled in!
-         */
-        loginForm.inputLogin(ConfProperties.getProperty("email"));
-        loginForm.inputPassword(ConfProperties.getProperty("password"));
-        loginForm.clickLoginButton();
-        checkUserName(ConfProperties.getProperty("username"));
-        profilePage.userLogout();
-    }
-
-    @Test
-    public void changeLanguageTest () {
-        mainPage.setLangEnglish();
-        checkLanguage(Info.EN);
-
-        mainPage.setLangUkrainian();
-        checkLanguage(Info.UA);
-
-        mainPage.setLangRussian();
-        checkLanguage(Info.RU);
-    }
-
-    public void checkLanguage (String lang) {
+    public void checkCurrency (String curr) {
         download_wait();
-        assertEquals(lang, mainPage.getLanguages());
+        assertEquals(curr, mainPage.getCurrency());
     }
 
     @Test // point 1-2
@@ -138,12 +93,6 @@ public class AllMiniTests extends SetupTest{
         mainPage.setCurrencyUAH();
         checkCurrency(Info.UAH);
         */
-    }
-
-    public void checkCurrency (String curr) {
-        download_wait();
-        System.out.printf("\nExpected: %s -> %s\n", curr, mainPage.getCurrency());
-        assertEquals(curr, mainPage.getCurrency());
     }
 
     @Test // point 4
@@ -212,13 +161,6 @@ public class AllMiniTests extends SetupTest{
                 .collect(Collectors.toList());
 
         assertEquals(list3, sortedList);
-    }
-
-    public double getNewOrOldPriceIfPresent (WebElement element) {
-        return productsObject.priceFinder2(element).stream()
-                .map(Info::parseDouble)
-                .max(Double::compare)
-                .get();
     }
 
     @Test // point 9-10
