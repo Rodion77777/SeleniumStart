@@ -1,4 +1,4 @@
-package utils;
+package org.example;
 
 import org.openqa.selenium.WebElement;
 
@@ -34,6 +34,21 @@ public class Info {
     public static final String SHOW12 = "12";
     public static final String SHOW24 = "24";
     public static final String SHOW60 = "60";
+
+    public static int convertPercentage (WebElement percent) {
+        return Math.abs (
+                Integer.parseInt (
+                        percent.getText().replaceAll("[ -+%]", "")
+                )
+        );
+    }
+
+    public static double convertPrice (WebElement price) {
+        return Double.parseDouble ( price.getText()
+                        .replaceAll("[\\s" + Info.REGEXCURRENCY + "]", "")
+                        .replace(",", ".")
+        );
+    }
 
     public static double parseDouble (WebElement price) {
         return Double.parseDouble (price.getText()

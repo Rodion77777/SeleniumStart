@@ -1,9 +1,6 @@
-package additionaltest;
+package org.example;
 
-import maintest.SetupTest;
 import org.junit.Test;
-import utils.Info;
-
 import static org.junit.Assert.assertEquals;
 
 public class AdditionalTest extends SetupTest {

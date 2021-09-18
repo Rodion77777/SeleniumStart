@@ -1,4 +1,4 @@
-package pages;
+package org.example;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -79,7 +79,7 @@ public class RegistrationForm {
      */
 
     // Submit email
-    public void inputEmail (String email) {
+    public void inputemail (String email) {
         emailCreate.sendKeys(email);
     }
 
@@ -99,6 +99,9 @@ public class RegistrationForm {
 
     public void inputLastName (String lastname) {
         lastName.sendKeys(lastname);
+    }
+
+    public void checkEmail (String email) {
     }
 
     public void inputPassword (String password) {
