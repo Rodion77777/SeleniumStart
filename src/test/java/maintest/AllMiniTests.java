@@ -1,8 +1,10 @@
-package org.example;
+package maintest;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import utils.ConfProperties;
+import utils.Info;
 
 import java.io.PrintStream;
 import java.text.DecimalFormat;

@@ -1,6 +1,9 @@
-package org.example;
+package additionaltest;
 
+import maintest.SetupTest;
 import org.junit.Test;
+import utils.ConfProperties;
+
 import static org.junit.Assert.assertEquals;
 
 public class Log_In_Out extends SetupTest {
@@ -17,12 +20,11 @@ public class Log_In_Out extends SetupTest {
          *      Website registration test.
          *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
-        registrationForm.inputemail(ConfProperties.getProperty("email"));
+        registrationForm.inputEmail(ConfProperties.getProperty("email"));
         registrationForm.clickCreateButton();
         registrationForm.genderChoice(ConfProperties.getProperty("gender"));
         registrationForm.inputFirstName(ConfProperties.getProperty("firstname"));
         registrationForm.inputLastName(ConfProperties.getProperty("lastname"));
-        registrationForm.checkEmail(ConfProperties.getProperty("email"));
         registrationForm.inputPassword(ConfProperties.getProperty("password"));
         registrationForm.setDaysOfBirth(ConfProperties.getProperty("birthDays"));
         registrationForm.setMonthOfBirth(ConfProperties.getProperty("birthMonth"));
