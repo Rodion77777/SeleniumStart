@@ -18,7 +18,7 @@ public class AdditionalTest extends SetupTest {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("page")));
 
         // page load timeout engage.
-        driver.get(driver.getCurrentUrl());
+        eventDriver.get(eventDriver.getCurrentUrl());
     }
 
     public void checkLanguage (String lang) {

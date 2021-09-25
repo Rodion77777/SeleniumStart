@@ -26,7 +26,7 @@ public class AllMiniTests extends SetupTest {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("page")));
 
         // page load timeout engage?
-        driver.get(driver.getCurrentUrl());
+        eventDriver.get(eventDriver.getCurrentUrl());
     }
 
     public void findResponse (String response) {
@@ -56,7 +56,7 @@ public class AllMiniTests extends SetupTest {
          *      Uncomment one of the lines to change the currency.
          */
 
-        driver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
 
         //mainPage.setCurrencyEUR();
         //mainPage.setCurrencyUSD();
@@ -111,7 +111,7 @@ public class AllMiniTests extends SetupTest {
          *      This test meets the requirement in point "3" in test task.
          */
 
-        driver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
 
         findResponse("dress");
 
@@ -143,7 +143,7 @@ public class AllMiniTests extends SetupTest {
 
     @Test // point 8
     public void priceSortMatch () {
-        driver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
 
         findResponse("dress");
 
@@ -167,7 +167,7 @@ public class AllMiniTests extends SetupTest {
 
     @Test // point 9-10
     public void findDiscount () {
-        driver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
 
         findResponse("dress");
 

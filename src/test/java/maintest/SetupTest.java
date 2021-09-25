@@ -6,12 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
 import utils.ConfProperties;
+import utils.EventHandler;
+import utils.JULogger;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class SetupTest {
 
@@ -21,15 +25,18 @@ public class SetupTest {
     public static RegistrationForm registrationForm;
     public static ResultSearchPage resultSearchPage;
     public static ProductsObject productsObject;
-    public static WebDriver driver;
     public static WebDriverWait wait;
+    public static Logger jlogger;
+    public static EventFiringWebDriver eventDriver;
 
     private static WebDriver setupChromeBrowser () {
         System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriver"));
+        jlogger.info("Chrome browser has been selected.\n");
         return new ChromeDriver();
     }
     private static WebDriver setupOperaBrowser () {
         System.setProperty("webdriver.opera.driver", ConfProperties.getProperty("operadriver"));
+        jlogger.info("Opera browser has been selected.\n");
         return new OperaDriver();
     }
     private static WebDriver setupFirefoxBrowser () {
@@ -42,6 +49,7 @@ public class SetupTest {
 
         System.setProperty(propertyGecko, fireFoxDriver_v29_1);
 
+        jlogger.info("Firefox browser has been selected.\n");
         return new FirefoxDriver();
     }
     public static WebDriver setupTorBrowser () {
@@ -66,33 +74,42 @@ public class SetupTest {
         options.setProfile(torProfile);
         options.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
 
+        jlogger.info("Tor browser has been selected.\n");
         return new FirefoxDriver(options);
     }
 
     @BeforeClass
     public static void setup () {
 
-        driver = setupChromeBrowser();
+        jlogger = new JULogger(SetupTest.class.getName()).myLogger;
 
-        mainPage = new MainPage(driver);
-        loginForm = new LoginForm(driver);
-        profilePage = new ProfilePage(driver);
-        registrationForm = new RegistrationForm(driver);
-        resultSearchPage = new ResultSearchPage(driver);
-        productsObject = new ProductsObject(driver);
+        jlogger.info("First initialisation driver.\n");
+        eventDriver = new EventFiringWebDriver(setupChromeBrowser()).register(new EventHandler(jlogger));
 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        jlogger.info("First initialisation of page objects.\n");
+        mainPage = new MainPage(eventDriver);
+        loginForm = new LoginForm(eventDriver);
+        profilePage = new ProfilePage(eventDriver);
+        registrationForm = new RegistrationForm(eventDriver);
+        resultSearchPage = new ResultSearchPage(eventDriver);
+        productsObject = new ProductsObject(eventDriver);
+        wait = new WebDriverWait(eventDriver, 10);
 
-        wait = new WebDriverWait(driver, 10);
-        driver.get(ConfProperties.getProperty("mainpage"));
+        jlogger.info("Setting implicit time-outs.\n");
+        eventDriver.manage().window().maximize();
+        eventDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        eventDriver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
+        eventDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
+
+        jlogger.info("Driver requests the home page of the website.\n");
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
     }
 
     @AfterClass
     public static void tearDown () {
+        jlogger.info("Performing the \"tearDown\" method.\n");
+
         mainPage = null;
         loginForm = null;
         profilePage = null;
@@ -100,8 +117,9 @@ public class SetupTest {
         resultSearchPage = null;
         productsObject = null;
         wait = null;
-        driver.close();
-        driver.quit();
+        eventDriver.close();
+        eventDriver.quit();
+        jlogger = null;
     }
 
 }

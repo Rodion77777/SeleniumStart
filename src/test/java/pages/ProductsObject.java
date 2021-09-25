@@ -1,23 +1,21 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.List;
 
 public class ProductsObject {
 
-    public WebDriver driver;
+    public EventFiringWebDriver eventDriver;
 
 
     /* ====================================================
      *             Constructor ProductsObject
      * ================================================= */
 
-    public ProductsObject (WebDriver driver) {
-        this.driver = driver;
-    }
+    public ProductsObject (EventFiringWebDriver eventDriver) { this.eventDriver = eventDriver;}
 
 
     /* ====================================================
@@ -25,7 +23,7 @@ public class ProductsObject {
      * ================================================= */
 
     public List<WebElement> itemFinder () {
-        return driver.findElements(By.xpath("//*[@id=\"center_column\"]/ul/li"));
+        return eventDriver.findElements(By.xpath("//*[@id=\"center_column\"]/ul/li"));
     }
 
     public List<WebElement> priceFinder2 (WebElement element) {
@@ -33,7 +31,7 @@ public class ProductsObject {
     }
 
     public List<WebElement> popItemFinder () {
-        return driver.findElements(By.xpath("//*[@id=\"homefeatured\"]/li"));
+        return eventDriver.findElements(By.xpath("//*[@id=\"homefeatured\"]/li"));
     }
 
     public WebElement nameFinder (WebElement element) {

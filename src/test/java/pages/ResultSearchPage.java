@@ -8,7 +8,7 @@ import utils.Info;
 
 public class ResultSearchPage {
 
-    public WebDriver driver;
+    //public WebDriver driver;
 
     // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div[1]/div/a[1]")
@@ -39,7 +39,7 @@ public class ResultSearchPage {
 
     public ResultSearchPage (WebDriver driver) {
         PageFactory.initElements(driver, this);
-        this.driver = driver;
+        //this.driver = driver;
     }
 
 

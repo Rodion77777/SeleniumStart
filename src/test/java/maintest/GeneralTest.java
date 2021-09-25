@@ -23,7 +23,7 @@ public class GeneralTest extends SetupTest{
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block_contact_infos\"]/div/ul/li[3]/i")));
 
         // page load timeout engage.
-        driver.get(driver.getCurrentUrl());
+        eventDriver.get(eventDriver.getCurrentUrl());
     }
 
     public void findResponse (String response) {
@@ -40,7 +40,7 @@ public class GeneralTest extends SetupTest{
 
     @Test
     public void generalTest () {
-        driver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
 
         List<WebElement> productList = productsObject.popItemFinder();
         List<WebElement> productPrice = productList.stream()

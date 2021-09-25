@@ -1,15 +1,14 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import utils.Info;
 
 public class MainPage {
 
-    public WebDriver driver;
-
+    public EventFiringWebDriver eventDriver;
 
     // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"search_query_top\"]")
@@ -64,9 +63,9 @@ public class MainPage {
      *               Constructor MainPage
      * ================================================= */
 
-    public MainPage (WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public MainPage (EventFiringWebDriver eventDriver) {
+        PageFactory.initElements(eventDriver, this);
+        this.eventDriver = eventDriver;
     }
 
 
@@ -107,8 +106,8 @@ public class MainPage {
     }
 
     private void setLang (String link) {
-        driver.get(
-                driver.getCurrentUrl()
+        eventDriver.get(
+                eventDriver.getCurrentUrl()
                         .replaceFirst(Info.BASE_LINK + "\\w{2}/", link)
         );
     }
