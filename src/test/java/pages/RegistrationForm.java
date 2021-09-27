@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -85,6 +86,7 @@ public class RegistrationForm {
 
     public void clickCreateButton () {
         submitCreate.click();
+        //eventDriver.findElement(By.xpath("//*[contains(@id, 'SubmitCreate')]")).click();
     }
 
     // Methods of field completion

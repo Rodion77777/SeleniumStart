@@ -29,7 +29,7 @@ public class GeneralTest extends SetupTest{
     }
 
     public void findRequest(String request) {
-        jlogger.log(Level.INFO, "Request search: {0}", request);
+        jlogger.log(Level.INFO, "Request search: {0}\n", request);
         mainPage.setRequest(request);
         mainPage.clickSearchButton();
     }
@@ -45,7 +45,7 @@ public class GeneralTest extends SetupTest{
     public void generalTest () {
         eventDriver.get(ConfProperties.getProperty("mainpage"));
 
-        jlogger.info("Checking currency in prices.");
+        jlogger.info("Checking currency in prices.\n");
         List<WebElement> productList = productsObject.popItemFinder();
         List<WebElement> productPrice = productList.stream()
                 .map(x -> productsObject.priceFinder2(x).get(0))
@@ -60,22 +60,22 @@ public class GeneralTest extends SetupTest{
                 case Info.€ -> assertEquals(Info.EUR, currency);
             }
         }
-        jlogger.fine("Verification of currency in prices completed!");
+        jlogger.fine("Verification of currency in prices completed!\n");
 
         currency = null;
         productList = null;
         productPrice = null;
 
-        jlogger.info("Setting the selected currency");
+        jlogger.info("Setting the selected currency\n");
         mainPage.setCurrencyUSD(); // point 3
         // TODO: uncomment line in the end of project
         //checkCurrency(Info.USD);
 
 
-        jlogger.info("Start of currency compliance checking.");
+        jlogger.info("Start of currency compliance checking.\n");
 
         String request = "dress";
-        jlogger.log(Level.INFO, "Search request: {0}", request);
+        jlogger.log(Level.INFO, "Search request: {0}\n", request);
         download_wait();
         findRequest(request); // point 4
         download_wait();
@@ -104,14 +104,14 @@ public class GeneralTest extends SetupTest{
                 .anyMatch(x -> !x.equals(Info.$));
 
         assertFalse(result);
-        jlogger.fine("Currency compliance check completed!");
+        jlogger.fine("Currency compliance check completed!\n");
 
         // point 7
-        jlogger.info("Checking the sorting of goods.");
+        jlogger.info("Checking the sorting of goods.\n");
         assertEquals(Info.SORTPRICEDESC, resultSearchPage.getValueSortBy());
 
         // point 8
-        jlogger.info("Start of the merchandise sorting compliance check.");
+        jlogger.info("Start of the merchandise sorting compliance check.\n");
         List<Double> list3 = products.stream()
                 .map(this::getNewOrOldPriceIfPresent)
                 .collect(Collectors.toList());
@@ -121,10 +121,10 @@ public class GeneralTest extends SetupTest{
                 .collect(Collectors.toList());
 
         assertEquals(list3, sortedList);
-        jlogger.fine("Checks on the appropriateness of the sorting of goods are completed!");
+        jlogger.fine("Checks on the appropriateness of the sorting of goods are completed!\n");
 
         // point 9
-        jlogger.info("The start of a price and discount check on goods.");
+        jlogger.info("The start of a price and discount check on goods.\n");
         List<List<WebElement>> pPrice = products.stream()
                 .map(productsObject::priceFinder2)
                 .filter(x -> x.size() == 3)
@@ -161,7 +161,7 @@ public class GeneralTest extends SetupTest{
             // point 10
             // TODO: uncomment line in the end of project
             //assertEquals(assertPrice, newPrice);
-            jlogger.fine("Checking prices and discounts on goods is complete!");
+            jlogger.fine("Checking prices and discounts on goods is complete!\n");
         }
     }
 }

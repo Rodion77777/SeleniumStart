@@ -19,7 +19,7 @@ public class JULogger {
         try {
             simpleFormatter = new SimpleFormatter();
             consoleHandler = new ConsoleHandler();
-            fileHandler = new FileHandler(pattern, 20000, 5, true);
+            fileHandler = new FileHandler(pattern, 200000, 5, true);
 
             consoleHandler.setFormatter(simpleFormatter);
             fileHandler.setFormatter(simpleFormatter);
