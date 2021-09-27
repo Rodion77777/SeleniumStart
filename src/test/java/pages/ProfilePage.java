@@ -1,13 +1,13 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class ProfilePage {
 
-    public WebDriver driver;
+    private EventFiringWebDriver eventDriver;
 
     @FindBy(xpath = "//*[contains(@class, 'logout')]")
     private WebElement logoutButton;
@@ -19,9 +19,9 @@ public class ProfilePage {
     /* ====================================================
      *               Constructor ProfilePage
      * ================================================= */
-    public ProfilePage (WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public ProfilePage (EventFiringWebDriver eventDriver) {
+        PageFactory.initElements(eventDriver, this);
+        this.eventDriver = eventDriver;
     }
 
     /* ====================================================

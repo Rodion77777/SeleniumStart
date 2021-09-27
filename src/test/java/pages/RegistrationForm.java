@@ -1,17 +1,17 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class RegistrationForm {
 
-    public WebDriver driver;
+    private EventFiringWebDriver eventDriver;
 
-    public RegistrationForm(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public RegistrationForm(EventFiringWebDriver eventDriver) {
+        PageFactory.initElements(eventDriver, this);
+        this.eventDriver = eventDriver;
     }
 
     @FindBy(xpath = "//*[contains(@id, 'email_create')]")

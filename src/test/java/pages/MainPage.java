@@ -6,9 +6,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import utils.Info;
 
+import java.util.logging.Logger;
+
 public class MainPage {
 
-    public EventFiringWebDriver eventDriver;
+    private EventFiringWebDriver eventDriver;
 
     // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"search_query_top\"]")
@@ -73,7 +75,7 @@ public class MainPage {
      *                      Methods
      * ================================================= */
 
-    public void setResponse (String response) {
+    public void setRequest(String response) {
         responseField.sendKeys(response);
     }
 

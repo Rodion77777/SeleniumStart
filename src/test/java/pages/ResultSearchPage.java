@@ -1,14 +1,16 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import utils.Info;
+
+import java.util.logging.Logger;
 
 public class ResultSearchPage {
 
-    //public WebDriver driver;
+    private EventFiringWebDriver eventDriver;
 
     // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div[1]/div/a[1]")
@@ -37,9 +39,9 @@ public class ResultSearchPage {
      *               Constructor MainPage
      * ================================================= */
 
-    public ResultSearchPage (WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        //this.driver = driver;
+    public ResultSearchPage (EventFiringWebDriver eventDriver) {
+        PageFactory.initElements(eventDriver, this);
+        this.eventDriver = eventDriver;
     }
 
 
@@ -55,19 +57,12 @@ public class ResultSearchPage {
         quickViewLink2.click();
     }
 
-    //public String getProductName () {
-        //return product_name.getText();
-    //}
-
     public boolean productNameIs (String response) {
         return product_name
                 .getText()
                 .toLowerCase()
                 .contains(response);
     }
-
-
-
 
     // Set select sort by -->
     public String getValueSortBy () {

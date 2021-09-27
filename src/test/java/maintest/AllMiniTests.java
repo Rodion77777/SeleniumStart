@@ -9,6 +9,7 @@ import utils.Info;
 import java.io.PrintStream;
 import java.text.DecimalFormat;
 import java.util.*;
+import java.util.logging.Level;
 import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
@@ -26,11 +27,13 @@ public class AllMiniTests extends SetupTest {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("page")));
 
         // page load timeout engage?
+        jlogger.info("Page update.");
         eventDriver.get(eventDriver.getCurrentUrl());
     }
 
-    public void findResponse (String response) {
-        mainPage.setResponse(response);
+    public void findRequest(String request) {
+        jlogger.log(Level.INFO, "Request search: {0}", request);
+        mainPage.setRequest(request);
         mainPage.clickSearchButton();
     }
 
@@ -43,6 +46,7 @@ public class AllMiniTests extends SetupTest {
 
     public void checkCurrency (String curr) {
         download_wait();
+        jlogger.log(Level.INFO, "Currency matching, expected {0}", curr);
         assertEquals(curr, mainPage.getCurrency());
     }
 
@@ -61,6 +65,7 @@ public class AllMiniTests extends SetupTest {
         //mainPage.setCurrencyEUR();
         //mainPage.setCurrencyUSD();
 
+        jlogger.info("Checking currency in prices.");
         List<WebElement> productList = productsObject.popItemFinder();
         List<WebElement> productPrice = productList.stream()
                 .map(x -> productsObject.priceFinder2(x).get(0))
@@ -75,6 +80,7 @@ public class AllMiniTests extends SetupTest {
                 case Info.€ -> assertEquals(Info.EUR, currency);
             }
         }
+        jlogger.fine("Verification of currency in prices completed!");
     }
 
     @Test // point 3
@@ -85,7 +91,7 @@ public class AllMiniTests extends SetupTest {
          *      This test meets the requirement in point "3" in test task.
          *      Uncomment lines for full test with all currencies.
          */
-
+        jlogger.info("Currency change check.");
         mainPage.setCurrencyUSD();
         checkCurrency(Info.USD);
         /*
@@ -99,7 +105,8 @@ public class AllMiniTests extends SetupTest {
 
     @Test // point 4
     public void searchOfDress () {
-        mainPage.setResponse("dress");
+        jlogger.info("Search engine test");
+        mainPage.setRequest("dress");
         mainPage.clickSearchButton();
     }
 
@@ -108,12 +115,14 @@ public class AllMiniTests extends SetupTest {
 
         /*
          *      Test of currency matching in all found products: "dress".
-         *      This test meets the requirement in point "3" in test task.
+         *      This test meets the requirement in point "5" and "6" in test task.
          */
+
+        jlogger.info("Start of currency compliance checking.");
 
         eventDriver.get(ConfProperties.getProperty("mainpage"));
 
-        findResponse("dress");
+        findRequest("dress");
 
         mainPage.setCurrencyUSD();
         download_wait();
@@ -130,6 +139,7 @@ public class AllMiniTests extends SetupTest {
                         .anyMatch(x -> !x.equals(Info.$));
 
         assertFalse(result);
+        jlogger.fine("Currency compliance check completed!");
     }
 
     @Test // point 7
@@ -137,15 +147,17 @@ public class AllMiniTests extends SetupTest {
         /*
          *      point 7
          */
+        jlogger.info("Checking the sorting of goods.");
         resultSearchPage.selectSortbyPriceDesc();
         assertEquals(Info.SORTPRICEDESC, resultSearchPage.getValueSortBy());
     }
 
     @Test // point 8
     public void priceSortMatch () {
+        jlogger.info("Start of the merchandise sorting compliance check.");
         eventDriver.get(ConfProperties.getProperty("mainpage"));
 
-        findResponse("dress");
+        findRequest("dress");
 
         resultSearchPage.selectSortbyPriceDesc();
         resultSearchPage.setShowResultsPerPage_60();
@@ -163,13 +175,15 @@ public class AllMiniTests extends SetupTest {
                 .collect(Collectors.toList());
 
         assertEquals(list3, sortedList);
+        jlogger.fine("Checks on the appropriateness of the sorting of goods are completed!");
     }
 
     @Test // point 9-10
     public void findDiscount () {
+        jlogger.info("The start of a price and discount check on goods.");
         eventDriver.get(ConfProperties.getProperty("mainpage"));
 
-        findResponse("dress");
+        findRequest("dress");
 
         resultSearchPage.selectSortbyPriceDesc();
         resultSearchPage.setShowResultsPerPage_60();
@@ -217,6 +231,7 @@ public class AllMiniTests extends SetupTest {
             OUT.println (template.format(assertPrice));
             // TODO: uncomment line in the end of project
             //assertEquals(assertPrice, newPrice);
+            jlogger.fine("Checking prices and discounts on goods is complete!");
         }
     }
 

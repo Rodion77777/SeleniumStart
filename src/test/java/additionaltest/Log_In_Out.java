@@ -20,6 +20,10 @@ public class Log_In_Out extends SetupTest {
          *      Website registration test.
          *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
+        jlogger.info("Start of registration.");
+
+        eventDriver.get(ConfProperties.getProperty("loginpage"));
+
         registrationForm.inputEmail(ConfProperties.getProperty("email"));
         registrationForm.clickCreateButton();
         registrationForm.genderChoice(ConfProperties.getProperty("gender"));
@@ -35,6 +39,8 @@ public class Log_In_Out extends SetupTest {
         checkUserName(ConfProperties.getProperty("username"));
         profilePage.userLogout();
         //loginForm.clickSetupButton();
+
+        jlogger.fine("Registration process completed!");
     }
 
     @Test
@@ -43,11 +49,17 @@ public class Log_In_Out extends SetupTest {
          *      Website login test.
          *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
+        jlogger.info("Start logging in to the account.");
+
+        eventDriver.get(ConfProperties.getProperty("loginpage"));
+
         loginForm.inputLogin(ConfProperties.getProperty("email"));
         loginForm.inputPassword(ConfProperties.getProperty("password"));
         loginForm.clickLoginButton();
         checkUserName(ConfProperties.getProperty("username"));
         profilePage.userLogout();
+
+        jlogger.fine("The account login process is complete!");
     }
 
 }

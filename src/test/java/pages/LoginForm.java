@@ -1,19 +1,18 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class LoginForm {
 
-    public WebDriver driver;
+    private EventFiringWebDriver eventDriver;
 
-    public LoginForm(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    public LoginForm(EventFiringWebDriver eventDriver) {
+        PageFactory.initElements(eventDriver, this);
+        this.eventDriver = eventDriver;
     }
-
 
     @FindBy(xpath = "//*[@id=\"email\"]")
     private WebElement emailfield;

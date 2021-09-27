@@ -3,19 +3,20 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import java.util.List;
 
 public class ProductsObject {
 
-    public EventFiringWebDriver eventDriver;
+    private EventFiringWebDriver eventDriver;
 
 
     /* ====================================================
      *             Constructor ProductsObject
      * ================================================= */
 
-    public ProductsObject (EventFiringWebDriver eventDriver) { this.eventDriver = eventDriver;}
+    public ProductsObject (EventFiringWebDriver eventDriver) {
+        this.eventDriver = eventDriver;
+    }
 
 
     /* ====================================================
