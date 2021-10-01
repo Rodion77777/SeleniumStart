@@ -6,8 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import utils.Info;
 
-import java.util.logging.Logger;
-
 public class ResultSearchPage {
 
     private EventFiringWebDriver eventDriver;
@@ -101,7 +99,6 @@ public class ResultSearchPage {
         selectProductSort.sendKeys(Info.SORTREFERENCEDESC);
     }
     // Set select sort by <--
-
 
     // Set show results per page value -->
     public void setShowResultsPerPage_12 () {

@@ -3,6 +3,7 @@ package maintest;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.ConfProperties;
 import utils.Info;
 
@@ -14,21 +15,12 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
-public class AllMiniTests extends SetupTest {
+public class AllMiniTests extends SetupTest2 {
     private static final PrintStream OUT = System.out;
 
     public void download_wait () {
-        // TODO: rebuild this method
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("html")));
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));// /html/body
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block_contact_infos\"]/div/ul/li[3]/i")));
-
-        //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("page")));
-
-        // page load timeout engage?
-        jlogger.info("Page update.");
-        eventDriver.get(eventDriver.getCurrentUrl());
+        jlogger.info("Wait for page load.\n");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));
     }
 
     public void findRequest(String request) {
@@ -45,7 +37,6 @@ public class AllMiniTests extends SetupTest {
     }
 
     public void checkCurrency (String curr) {
-        download_wait();
         jlogger.log(Level.INFO, "Currency matching, expected {0}", curr);
         assertEquals(curr, mainPage.getCurrency());
     }
@@ -125,10 +116,12 @@ public class AllMiniTests extends SetupTest {
         findRequest("dress");
 
         mainPage.setCurrencyUSD();
-        download_wait();
+        assertEquals(Info.USD, mainPage.getCurrency());
+
         resultSearchPage.selectSortbyPriceDesc();
-        resultSearchPage.setShowResultsPerPage_60();
-        download_wait();
+        assertEquals(Info.SORTPRICEDESC, resultSearchPage.getValueSortBy());
+
+        resultSearchPage.showALLResults();
 
         List<WebElement> myItems = productsObject.itemFinder();
         assertNotNull(String.valueOf(resultSearchPage.getFoundResultsValue()));
@@ -148,6 +141,7 @@ public class AllMiniTests extends SetupTest {
          *      point 7
          */
         jlogger.info("Checking the sorting of goods.");
+        findRequest("dress");
         resultSearchPage.selectSortbyPriceDesc();
         assertEquals(Info.SORTPRICEDESC, resultSearchPage.getValueSortBy());
     }
@@ -160,8 +154,8 @@ public class AllMiniTests extends SetupTest {
         findRequest("dress");
 
         resultSearchPage.selectSortbyPriceDesc();
-        resultSearchPage.setShowResultsPerPage_60();
-        download_wait();
+        assertEquals(Info.SORTPRICEDESC, resultSearchPage.getValueSortBy());
+        resultSearchPage.showALLResults();
 
         List<WebElement> myItems = productsObject.itemFinder();
         assertEquals(myItems.size(), resultSearchPage.getFoundResultsValue());
@@ -186,15 +180,14 @@ public class AllMiniTests extends SetupTest {
         findRequest("dress");
 
         resultSearchPage.selectSortbyPriceDesc();
-        resultSearchPage.setShowResultsPerPage_60();
-        download_wait();
+        resultSearchPage.showALLResults();
 
         List<WebElement> pProducts = productsObject.itemFinder();
         List<List<WebElement>> pPrice = pProducts.stream()
                 .map(productsObject::priceFinder2)
                 .filter(x -> x.size() == 3)
                 .collect(Collectors.toList());
-
+        /*
         // TODO: rebuild or delete
         OUT.printf("\npProduct.size : %d", pProducts.size());
         OUT.printf("\npPrice.size : %d", pPrice.size());
@@ -202,6 +195,8 @@ public class AllMiniTests extends SetupTest {
         OUT.println(pPrice.get(0).get(0).getText());
         OUT.println(pPrice.get(0).get(1).getText());
         OUT.println(pPrice.get(0).get(2).getText());
+
+         //*/
 
         DecimalFormat template = new DecimalFormat("### ###.00");
 

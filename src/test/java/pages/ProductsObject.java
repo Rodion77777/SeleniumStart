@@ -3,25 +3,17 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.List;
 
 public class ProductsObject {
 
     private EventFiringWebDriver eventDriver;
 
-
-    /* ====================================================
-     *             Constructor ProductsObject
-     * ================================================= */
-
     public ProductsObject (EventFiringWebDriver eventDriver) {
         this.eventDriver = eventDriver;
     }
-
-
-    /* ====================================================
-     *                      Methods
-     * ================================================= */
 
     public List<WebElement> itemFinder () {
         return eventDriver.findElements(By.xpath("//*[@id=\"center_column\"]/ul/li"));

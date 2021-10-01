@@ -107,7 +107,8 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void afterChangeValueOf(WebElement webElement, WebDriver webDriver, CharSequence[] charSequences) {
-        LOGGER.log(Level.FINE, "Changed element: {0}\n", webElement);
+        String value = Arrays.stream(charSequences).map(CharSequence::toString).collect(Collectors.joining());
+        LOGGER.log(Level.FINE, "Changed element: {0} {1}\n", new String[]{webElement.toString(), value});
     }
 
     @Override

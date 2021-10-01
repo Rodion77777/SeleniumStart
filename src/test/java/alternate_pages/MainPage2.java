@@ -1,19 +1,29 @@
 package alternate_pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Info;
 
 public class MainPage2 {
 
     private EventFiringWebDriver eventDriver;
+    private WebDriverWait wait;
 
     public MainPage2 (EventFiringWebDriver eventDriver) {
         this.eventDriver = eventDriver;
+        wait = new WebDriverWait(eventDriver, 10);
     }
 
     public void setRequest(String response) {
-        eventDriver.findElement(By.xpath("//*[@id=\"search_query_top\"]")).sendKeys(response);
+        WebElement element = eventDriver.findElement(By.xpath("//*[@id=\"search_query_top\"]"));
+        element.sendKeys(Keys.CONTROL + "a");
+        element.sendKeys(Keys.DELETE);
+        element.sendKeys(response);
     }
 
     public void clickSearchButton () {
@@ -59,38 +69,43 @@ public class MainPage2 {
         return eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong")).getText();
     }
 
-    public void setCurrencyUAH (){
+    public void setCurrencyUAH () {
         eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
         eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")).click();
+        wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")));
+    }
 
-        //List<WebElement> curr = currencySelectButton.findElements(By.xpath("ul/li"));
-        //curr.get(2).click();
-        //curr.get(2).findElement(By.xpath("a")).click();
-        /*
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:setCurrency(1);", set_currency_button);
-        set_currency_button.click();
-         */
+    public void setCurrencyUAH_JS () {
+        JavascriptExecutor js = (JavascriptExecutor) eventDriver;
+        WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
+        js.executeScript("javascript:setCurrency(1);", button);
+        button.click();
     }
 
     public void setCurrencyUSD () {
         eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
         eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]")).click();
-        /*
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:setCurrency(3);", set_currency_button);
-        set_currency_button.click();
-         */
+        wait.until(ExpectedConditions.invisibilityOf(eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]"))));
+    }
+
+    public void setCurrencyUSD_JS () {
+        JavascriptExecutor js = (JavascriptExecutor) eventDriver;
+        WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
+        js.executeScript("javascript:setCurrency(3);", button);
+        button.click();
     }
 
     public void setCurrencyEUR () {
         eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
         eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")).click();
-        /*
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:setCurrency(2);", set_currency_button);
-        set_currency_button.click();
-         */
+        wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")));
+    }
+
+    public void setCurrencyEUR_JS () {
+        JavascriptExecutor js = (JavascriptExecutor) eventDriver;
+        WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
+        js.executeScript("javascript:setCurrency(2);", button);
+        button.click();
     }
 
     public void clickSetupButton () {

@@ -76,6 +76,7 @@ public class MainPage {
      * ================================================= */
 
     public void setRequest(String response) {
+        responseField.clear();
         responseField.sendKeys(response);
     }
 

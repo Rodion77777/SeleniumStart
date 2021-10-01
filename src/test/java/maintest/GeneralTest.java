@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
-public class GeneralTest extends SetupTest{
+public class GeneralTest extends SetupTest2 {
     private static final PrintStream OUT = System.out;
 
     public void download_wait () {
@@ -76,12 +76,9 @@ public class GeneralTest extends SetupTest{
 
         String request = "dress";
         jlogger.log(Level.INFO, "Search request: {0}\n", request);
-        download_wait();
         findRequest(request); // point 4
-        download_wait();
         resultSearchPage.selectSortbyPriceDesc();
-        resultSearchPage.setShowResultsPerPage_60();
-        download_wait();
+        resultSearchPage.showALLResults();
 
         List<WebElement> products = productsObject.itemFinder();
         List<WebElement> productsName = products.stream()
