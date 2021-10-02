@@ -1,3505 +1,717 @@
-окт. 02, 2021 7:19:41 PM utils.JULogger <init>
-CONFIG: Configuration done.
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:19:41 PM utils.JULogger <init>
-FINE: Finer logged
-
-окт. 02, 2021 7:19:41 PM utils.JULogger <init>
-FINER: Finest example on LOGGER handler completed.
-
-окт. 02, 2021 7:19:41 PM maintest.SetupTest setup
-INFO: First initialisation driver.
-
-окт. 02, 2021 7:19:41 PM maintest.SetupTest setupChromeBrowser
-INFO: Chrome browser has been selected.
-
-окт. 02, 2021 7:19:42 PM maintest.SetupTest setup
-INFO: First initialisation of page objects.
-
-окт. 02, 2021 7:19:42 PM maintest.SetupTest setup
-INFO: Setting implicit time-outs.
-
-окт. 02, 2021 7:19:42 PM maintest.SetupTest setup
-INFO: Driver requests the home page of the website.
-
-окт. 02, 2021 7:19:42 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:43 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:43 PM maintest.AllMiniTests priceSortMatch
-INFO: Start of the merchandise sorting compliance check.
-окт. 02, 2021 7:19:43 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:44 PM maintest.AllMiniTests findRequest
-INFO: Request search: dress
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: a
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] a
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: 
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] 
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: dress
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] dress
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="searchbox"]/button
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:44 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="searchbox"]/button]
-
-окт. 02, 2021 7:19:45 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:45 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]
-
-окт. 02, 2021 7:19:45 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:45 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of select: Price: Highest first
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="selectProductSort"]] Price: Highest first
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]/option[3]
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="uniform-selectProductSort"]/span
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="uniform-selectProductSort"]/span]
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="pagination"]/form/div/button
-
-окт. 02, 2021 7:19:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/ul/li
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/h1/span[2]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/h1/span[2]]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:47 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:48 PM maintest.AllMiniTests priceSortMatch
-FINE: Checks on the appropriateness of the sorting of goods are completed!
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:48 PM maintest.AllMiniTests currencyMatching
-INFO: Checking currency in prices.
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="homefeatured"]/li
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:49 PM maintest.AllMiniTests currencyMatching
-FINE: Verification of currency in prices completed!
-окт. 02, 2021 7:19:49 PM maintest.AllMiniTests searchOfDress
-INFO: Search engine test
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: a
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] a
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: 
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] 
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: dress
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] dress
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="searchbox"]/button
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:49 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="searchbox"]/button]
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:50 PM maintest.AllMiniTests findDiscount
-INFO: The start of a price and discount check on goods.
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:50 PM maintest.AllMiniTests findRequest
-INFO: Request search: dress
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: a
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] a
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: 
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] 
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: dress
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] dress
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="searchbox"]/button
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:50 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="searchbox"]/button]
-
-окт. 02, 2021 7:19:51 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]
-
-окт. 02, 2021 7:19:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:51 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of select: Price: Highest first
-
-окт. 02, 2021 7:19:52 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="selectProductSort"]] Price: Highest first
-
-окт. 02, 2021 7:19:52 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]/option[3]
-
-окт. 02, 2021 7:19:52 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:52 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="pagination"]/form/div/button
-
-окт. 02, 2021 7:19:52 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/ul/li
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM maintest.AllMiniTests findDiscount
-FINE: Checking prices and discounts on goods is complete!
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:53 PM maintest.AllMiniTests findDiscount
-FINE: Checking prices and discounts on goods is complete!
-окт. 02, 2021 7:19:53 PM maintest.AllMiniTests changeCurrencyTest
-INFO: Currency change check.
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="setCurrency"]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="setCurrency"]]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:53 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]]
-
-окт. 02, 2021 7:19:54 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:54 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:19:54 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:54 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:55 PM maintest.AllMiniTests checkCurrency
-INFO: Currency matching, expected USD
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong]
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:55 PM maintest.AllMiniTests findItemTest
-INFO: Start of currency compliance checking.
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:19:55 PM maintest.AllMiniTests findRequest
-INFO: Request search: dress
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: a
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] a
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: 
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] 
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:55 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: dress
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] dress
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="searchbox"]/button
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="searchbox"]/button]
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="setCurrency"]
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="setCurrency"]]
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]]
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:19:56 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong]
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:57 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of select: Price: Highest first
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="selectProductSort"]] Price: Highest first
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]/option[3]
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="uniform-selectProductSort"]/span
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="uniform-selectProductSort"]/span]
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="pagination"]/form/div/button
-
-окт. 02, 2021 7:19:58 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/ul/li
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/h1/span[2]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/h1/span[2]]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/h1/span[2]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/h1/span[2]]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:19:59 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:00 PM maintest.AllMiniTests findItemTest
-FINE: Currency compliance check completed!
-окт. 02, 2021 7:20:00 PM maintest.AllMiniTests sortButtonTest
-INFO: Checking the sorting of goods.
-окт. 02, 2021 7:20:00 PM maintest.AllMiniTests findRequest
-INFO: Request search: dress
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: a
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] a
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: 
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] 
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: dress
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="search_query_top"]] dress
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="searchbox"]/button
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:00 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="searchbox"]/button]
-
-окт. 02, 2021 7:20:01 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:20:01 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]
-
-окт. 02, 2021 7:20:01 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:01 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of select: Price: Highest first
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="selectProductSort"]] Price: Highest first
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]/option[3]
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="uniform-selectProductSort"]/span
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (0276ff93b1e98449e7ae060f920a1f59)] -> xpath: //*[@id="uniform-selectProductSort"]/span]
-
-окт. 02, 2021 7:20:02 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:02 PM maintest.SetupTest tearDown
-INFO: Performing the "tearDown" method.
-
-окт. 02, 2021 7:20:42 PM utils.JULogger <init>
-CONFIG: Configuration done.
-
-окт. 02, 2021 7:20:42 PM utils.JULogger <init>
-FINE: Finer logged
-
-окт. 02, 2021 7:20:42 PM utils.JULogger <init>
-FINER: Finest example on LOGGER handler completed.
-
-окт. 02, 2021 7:20:42 PM maintest.SetupTest setup
-INFO: First initialisation driver.
-
-окт. 02, 2021 7:20:42 PM maintest.SetupTest setupChromeBrowser
-INFO: Chrome browser has been selected.
-
-окт. 02, 2021 7:20:44 PM maintest.SetupTest setup
-INFO: First initialisation of page objects.
-
-окт. 02, 2021 7:20:44 PM maintest.SetupTest setup
-INFO: Setting implicit time-outs.
-
-окт. 02, 2021 7:20:44 PM maintest.SetupTest setup
-INFO: Driver requests the home page of the website.
-
-окт. 02, 2021 7:20:44 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:20:45 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:20:45 PM utils.EventHandler beforeNavigateTo
-INFO: Navigate to : http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterNavigateTo
-FINE: Current URL: http://prestashop.qatestlab.com.ua/ru/
-
-окт. 02, 2021 7:20:46 PM maintest.GeneralTest generalTest
-INFO: Checking currency in prices.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="homefeatured"]/li
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="homefeatured"]/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:46 PM maintest.GeneralTest generalTest
-FINE: Verification of currency in prices completed!
-
-окт. 02, 2021 7:20:46 PM maintest.GeneralTest generalTest
-INFO: Setting the selected currency
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="setCurrency"]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="setCurrency"]]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:46 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: /html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:47 PM maintest.GeneralTest generalTest
-INFO: Start of currency compliance checking.
-
-окт. 02, 2021 7:20:47 PM maintest.GeneralTest generalTest
-INFO: Search request: dress
-
-окт. 02, 2021 7:20:47 PM maintest.GeneralTest findRequest
-INFO: Request search: dress
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: a
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="search_query_top"]] a
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: 
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="search_query_top"]] 
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="search_query_top"]
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of input: dress
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="search_query_top"]] dress
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="searchbox"]/button
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:47 PM utils.EventHandler beforeClickOn
-INFO: Find element by: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="searchbox"]/button]
-
-окт. 02, 2021 7:20:48 PM utils.EventHandler afterClickOn
-FINE: Clicked successfully.
-
-окт. 02, 2021 7:20:48 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]
-
-окт. 02, 2021 7:20:48 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:48 PM utils.EventHandler beforeChangeValueOf
-INFO: Change value of select: Price: Highest first
-
-окт. 02, 2021 7:20:49 PM utils.EventHandler afterChangeValueOf
-FINE: Changed element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="selectProductSort"]] Price: Highest first
-
-окт. 02, 2021 7:20:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="selectProductSort"]/option[3]
-
-окт. 02, 2021 7:20:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:49 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="pagination"]/form/div/button
-
-окт. 02, 2021 7:20:49 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/ul/li
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/h5/a
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/h1/span[2]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/h1/span[2]]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="center_column"]/h1/span[2]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/h1/span[2]]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:50 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM maintest.GeneralTest generalTest
-FINE: Currency compliance check completed!
-
-окт. 02, 2021 7:20:51 PM maintest.GeneralTest generalTest
-INFO: Checking the sorting of goods.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: //*[@id="uniform-selectProductSort"]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="uniform-selectProductSort"]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM maintest.GeneralTest generalTest
-INFO: Start of the merchandise sorting compliance check.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
-FINE: Text successfully received!
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
-INFO: Find element by: By.xpath: div/div[2]/div[1]/span
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
-FINE: Element successfully found.
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
-
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:51 PM maintest.GeneralTest generalTest
+окт. 02, 2021 7:28:53 PM maintest.GeneralTest generalTest
 FINE: Checks on the appropriateness of the sorting of goods are completed!
 
-окт. 02, 2021 7:20:51 PM maintest.GeneralTest generalTest
+окт. 02, 2021 7:28:53 PM maintest.GeneralTest generalTest
 INFO: The start of a price and discount check on goods.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:53 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:51 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeFindBy
 INFO: Find element by: By.xpath: div/div[2]/div[1]/span
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterFindBy
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterFindBy
 FINE: Element successfully found.
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM maintest.GeneralTest generalTest
+окт. 02, 2021 7:28:54 PM maintest.GeneralTest generalTest
 FINE: Checking prices and discounts on goods is complete!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler beforeGetText
-INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (4b72d8d819c1ab0e47d5a6d08f6636b2)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
+окт. 02, 2021 7:28:54 PM utils.EventHandler beforeGetText
+INFO: Trying to retrieve text from element: [[[[ChromeDriver: chrome on WINDOWS (29a6a4751c1e8ca368319c71a3171275)] -> xpath: //*[@id="center_column"]/ul/li]] -> xpath: div/div[2]/div[1]/span]
 
-окт. 02, 2021 7:20:52 PM utils.EventHandler afterGetText
+окт. 02, 2021 7:28:54 PM utils.EventHandler afterGetText
 FINE: Text successfully received!
 
-окт. 02, 2021 7:20:52 PM maintest.GeneralTest generalTest
+окт. 02, 2021 7:28:54 PM maintest.GeneralTest generalTest
 FINE: Checking prices and discounts on goods is complete!
 
-окт. 02, 2021 7:20:52 PM maintest.SetupTest tearDown
+окт. 02, 2021 7:28:54 PM maintest.SetupTest tearDown
 INFO: Performing the "tearDown" method.
 

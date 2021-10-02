@@ -29,6 +29,11 @@ public class GeneralTest extends SetupTest {
         mainPage.clickSearchButton();
     }
 
+    public void checkCurrency (String curr) {
+        jlogger.log(Level.INFO, "Currency matching, expected {0}", curr);
+        assertEquals(curr, mainPage.getCurrency());
+    }
+
     public double getNewOrOldPriceIfPresent (WebElement element) {
         return productsObject.priceFinder2(element).stream()
                 .map(Info::parseDouble)
@@ -63,9 +68,7 @@ public class GeneralTest extends SetupTest {
 
         jlogger.info("Setting the selected currency\n");
         mainPage.setCurrencyUSD(); // point 3
-        // TODO: uncomment line in the end of project
-        //checkCurrency(Info.USD);
-
+        checkCurrency(Info.USD);
 
         jlogger.info("Start of currency compliance checking.\n");
 
