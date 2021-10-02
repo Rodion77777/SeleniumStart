@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
-public class AllMiniTests extends SetupTest2 {
+public class AllMiniTests extends SetupTest {
     private static final PrintStream OUT = System.out;
 
     public void download_wait () {
@@ -187,16 +187,6 @@ public class AllMiniTests extends SetupTest2 {
                 .map(productsObject::priceFinder2)
                 .filter(x -> x.size() == 3)
                 .collect(Collectors.toList());
-        /*
-        // TODO: rebuild or delete
-        OUT.printf("\npProduct.size : %d", pProducts.size());
-        OUT.printf("\npPrice.size : %d", pPrice.size());
-        OUT.printf("\npPrice.get(0).size() : %d", pPrice.get(0).size());
-        OUT.println(pPrice.get(0).get(0).getText());
-        OUT.println(pPrice.get(0).get(1).getText());
-        OUT.println(pPrice.get(0).get(2).getText());
-
-         //*/
 
         DecimalFormat template = new DecimalFormat("### ###.00");
 

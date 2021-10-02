@@ -1,18 +1,21 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Info;
-
-import java.util.logging.Logger;
 
 public class MainPage {
 
     private EventFiringWebDriver eventDriver;
+    private WebDriverWait wait;
 
-    // TODO: remove unused variables and methods
     @FindBy(xpath = "//*[@id=\"search_query_top\"]")
     private WebElement responseField;
 
@@ -41,8 +44,10 @@ public class MainPage {
 
     @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")
     private WebElement setCurrencyUAH;
+
     @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]")
     private WebElement setCurrencyUSD;
+
     @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")
     private WebElement setCurrencyEUR;
 
@@ -68,6 +73,7 @@ public class MainPage {
     public MainPage (EventFiringWebDriver eventDriver) {
         PageFactory.initElements(eventDriver, this);
         this.eventDriver = eventDriver;
+        wait = new WebDriverWait(eventDriver, 10);
     }
 
 
@@ -76,7 +82,8 @@ public class MainPage {
      * ================================================= */
 
     public void setRequest(String response) {
-        responseField.clear();
+        responseField.sendKeys(Keys.CONTROL + "a");
+        responseField.sendKeys(Keys.DELETE);
         responseField.sendKeys(response);
     }
 
@@ -123,37 +130,37 @@ public class MainPage {
         return currencyText.getText();
     }
 
-    public void setCurrencyUAH (){
+    public void setCurrencyUAH () {
         currencySelectButton.click();
         setCurrencyUAH.click();
-        //List<WebElement> curr = currencySelectButton.findElements(By.xpath("ul/li"));
-        //curr.get(2).click();
-        //curr.get(2).findElement(By.xpath("a")).click();
-        /*
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:setCurrency(1);", set_currency_button);
+        wait.until(ExpectedConditions.invisibilityOf(setCurrencyUAH));
+    }
+
+    public void setCurrencyUAH_JS () {
+        eventDriver.executeScript("javascript:setCurrency(1);", set_currency_button);
         set_currency_button.click();
-         */
     }
 
     public void setCurrencyUSD () {
         currencySelectButton.click();
         setCurrencyUSD.click();
-        /*
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:setCurrency(3);", set_currency_button);
+        wait.until(ExpectedConditions.invisibilityOf(setCurrencyUSD));
+    }
+
+    public void setCurrencyUSD_JS () {
+        eventDriver.executeScript("javascript:setCurrency(3);", set_currency_button);
         set_currency_button.click();
-         */
     }
 
     public void setCurrencyEUR () {
         currencySelectButton.click();
         setCurrencyEUR.click();
-        /*
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:setCurrency(2);", set_currency_button);
+        wait.until(ExpectedConditions.invisibilityOf(setCurrencyEUR));
+    }
+
+    public void setCurrencyEUR_JS () {
+        eventDriver.executeScript("javascript:setCurrency(2);", set_currency_button);
         set_currency_button.click();
-         */
     }
 
     public void clickSetupButton () {

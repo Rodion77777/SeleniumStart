@@ -3,6 +3,7 @@ package maintest;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.ConfProperties;
 import utils.Info;
 
@@ -14,18 +15,12 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
-public class GeneralTest extends SetupTest2 {
+public class GeneralTest extends SetupTest {
     private static final PrintStream OUT = System.out;
 
     public void download_wait () {
-        // TODO: rebuild this method
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("html")));
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));// /html/body
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block_contact_infos\"]/div/ul/li[3]/i")));
-
-        // page load timeout engage.
-        jlogger.info("Page update.");
-        eventDriver.get(eventDriver.getCurrentUrl());
+        jlogger.info("Wait for page load.\n");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));
     }
 
     public void findRequest(String request) {

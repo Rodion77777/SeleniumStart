@@ -1,7 +1,6 @@
 package alternate_pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -76,9 +75,8 @@ public class MainPage2 {
     }
 
     public void setCurrencyUAH_JS () {
-        JavascriptExecutor js = (JavascriptExecutor) eventDriver;
         WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
-        js.executeScript("javascript:setCurrency(1);", button);
+        eventDriver.executeScript("javascript:setCurrency(1);", button);
         button.click();
     }
 
@@ -89,9 +87,8 @@ public class MainPage2 {
     }
 
     public void setCurrencyUSD_JS () {
-        JavascriptExecutor js = (JavascriptExecutor) eventDriver;
         WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
-        js.executeScript("javascript:setCurrency(3);", button);
+        eventDriver.executeScript("javascript:setCurrency(3);", button);
         button.click();
     }
 
@@ -102,9 +99,8 @@ public class MainPage2 {
     }
 
     public void setCurrencyEUR_JS () {
-        JavascriptExecutor js = (JavascriptExecutor) eventDriver;
         WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
-        js.executeScript("javascript:setCurrency(2);", button);
+        eventDriver.executeScript("javascript:setCurrency(2);", button);
         button.click();
     }
 
