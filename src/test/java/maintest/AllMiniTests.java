@@ -18,6 +18,17 @@ import static org.junit.Assert.*;
 public class AllMiniTests extends SetupTest {
     private static final PrintStream OUT = System.out;
 
+    // TODO: delete this test after using
+    @Test
+    public void loggerUsingTest () {
+        jlogger.info("loggerUsingTest: test log");
+        eventDriver.get(ConfProperties.getProperty("mainpage"));
+        findRequest("dress");
+        resultSearchPage.selectSortbyPriceDesc();
+        resultSearchPage.setShowResultsPerPage_24();
+        resultSearchPage.showALLResults();
+    }
+
     public void download_wait () {
         jlogger.info("Wait for page load.\n");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));
@@ -214,7 +225,7 @@ public class AllMiniTests extends SetupTest {
             assertTrue(x.get(2).getText().matches("^-\\d+%$"));
 
             OUT.println (template.format(assertPrice));
-            // TODO: uncomment line in the end of project
+            // TODO: this statement is incorrect because the data provided by the website does not match the request
             //assertEquals(assertPrice, newPrice);
             jlogger.fine("Checking prices and discounts on goods is complete!");
         }

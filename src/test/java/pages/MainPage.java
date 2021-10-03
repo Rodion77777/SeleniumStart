@@ -88,6 +88,7 @@ public class MainPage {
     }
 
     public void clickSearchButton () {
+
         searchButton.click();
     }
 

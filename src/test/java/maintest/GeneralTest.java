@@ -84,12 +84,13 @@ public class GeneralTest extends SetupTest {
                 .collect(Collectors.toList());
 
         for (WebElement x : productsName) {
-            // TODO: uncomment line in the end of project
+            // TODO: this statement is incorrect because the data provided by the website does not match the request
             //assertTrue(x.getText().toLowerCase().contains(request.toLowerCase()));
         }
 
         productsName = null;
 
+        // point 5
         assertNotNull(String.valueOf(resultSearchPage.getFoundResultsValue()));
         assertEquals(products.size(), resultSearchPage.getFoundResultsValue());
 
@@ -154,7 +155,7 @@ public class GeneralTest extends SetupTest {
             OUT.println(new DecimalFormat("### ##0.00").format(assertPrice));
 
             // point 10
-            // TODO: uncomment line in the end of project
+            // TODO: this statement is incorrect because the data provided by the website does not match the request
             //assertEquals(assertPrice, newPrice);
             jlogger.fine("Checking prices and discounts on goods is complete!\n");
         }

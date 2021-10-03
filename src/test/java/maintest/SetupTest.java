@@ -101,7 +101,6 @@ public class SetupTest {
         eventDriver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         eventDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
-
         jlogger.info("Driver requests the home page of the website.\n");
         eventDriver.get(ConfProperties.getProperty("mainpage"));
     }
