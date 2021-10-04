@@ -1,7 +1,6 @@
 package maintest;
 
 import alternate_pages.*;
-import pages.ProductsObject;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -27,7 +26,7 @@ public class SetupTest2 {
     public static ProfilePage2 profilePage;
     public static RegistrationForm2 registrationForm;
     public static ResultSearchPage2 resultSearchPage;
-    public static ProductsObject productsObject;
+    public static ProductsObject2 productsObject;
     public static WebDriverWait wait;
     public static Logger jlogger;
     public static EventFiringWebDriver eventDriver;
@@ -95,7 +94,7 @@ public class SetupTest2 {
         profilePage = new ProfilePage2(eventDriver);
         registrationForm = new RegistrationForm2(eventDriver);
         resultSearchPage = new ResultSearchPage2(eventDriver);
-        productsObject = new ProductsObject(eventDriver);
+        productsObject = new ProductsObject2(eventDriver);
         wait = new WebDriverWait(eventDriver, 30);
 
         jlogger.info("Setting implicit time-outs.\n");
@@ -103,7 +102,6 @@ public class SetupTest2 {
         eventDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         eventDriver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         eventDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-
 
         jlogger.info("Driver requests the home page of the website.\n");
         eventDriver.get(ConfProperties.getProperty("mainpage"));

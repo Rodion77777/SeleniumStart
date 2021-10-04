@@ -18,17 +18,6 @@ import static org.junit.Assert.*;
 public class AllMiniTests extends SetupTest {
     private static final PrintStream OUT = System.out;
 
-    // TODO: delete this test after using
-    @Test
-    public void loggerUsingTest () {
-        jlogger.info("loggerUsingTest: test log");
-        eventDriver.get(ConfProperties.getProperty("mainpage"));
-        findRequest("dress");
-        resultSearchPage.selectSortbyPriceDesc();
-        resultSearchPage.setShowResultsPerPage_24();
-        resultSearchPage.showALLResults();
-    }
-
     public void download_wait () {
         jlogger.info("Wait for page load.\n");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajax_running")));

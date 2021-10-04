@@ -1,5 +1,6 @@
 package pages;
 
+import maintest.SetupTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,6 +11,7 @@ public class LoginForm {
     private EventFiringWebDriver eventDriver;
 
     public LoginForm(EventFiringWebDriver eventDriver) {
+        SetupTest.jlogger.info("Class constructor \"LoginForm\"\n");
         PageFactory.initElements(eventDriver, this);
         this.eventDriver = eventDriver;
     }

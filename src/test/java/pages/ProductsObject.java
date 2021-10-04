@@ -1,5 +1,6 @@
 package pages;
 
+import maintest.SetupTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -11,6 +12,7 @@ public class ProductsObject {
     private EventFiringWebDriver eventDriver;
 
     public ProductsObject (EventFiringWebDriver eventDriver) {
+        SetupTest.jlogger.info("Class constructor \"ProductsObject\"\n");
         this.eventDriver = eventDriver;
     }
 

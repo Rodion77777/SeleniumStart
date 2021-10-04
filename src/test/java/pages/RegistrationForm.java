@@ -1,5 +1,6 @@
 package pages;
 
+import maintest.SetupTest;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,6 +11,7 @@ public class RegistrationForm {
     private EventFiringWebDriver eventDriver;
 
     public RegistrationForm(EventFiringWebDriver eventDriver) {
+        SetupTest.jlogger.info("Class constructor \"RegistrationForm\"\n");
         PageFactory.initElements(eventDriver, this);
         this.eventDriver = eventDriver;
     }
