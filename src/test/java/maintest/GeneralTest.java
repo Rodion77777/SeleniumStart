@@ -85,7 +85,7 @@ public class GeneralTest extends SetupTest {
 
         for (WebElement x : productsName) {
             // TODO: this statement is incorrect because the data provided by the website does not match the request
-            //assertTrue(x.getText().toLowerCase().contains(request.toLowerCase()));
+            assertTrue(x.getText().toLowerCase().contains(request.toLowerCase()));
         }
 
         productsName = null;
@@ -156,7 +156,7 @@ public class GeneralTest extends SetupTest {
 
             // point 10
             // TODO: this statement is incorrect because the data provided by the website does not match the request
-            //assertEquals(assertPrice, newPrice);
+            assertEquals(assertPrice, newPrice);
             jlogger.fine("Checking prices and discounts on goods is complete!\n");
         }
     }

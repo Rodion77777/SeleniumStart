@@ -6,7 +6,6 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.List;
 
-// TODO: adding to the SetupTest2
 public class ProductsObject {
 
     private EventFiringWebDriver eventDriver;

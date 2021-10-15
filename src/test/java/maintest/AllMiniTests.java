@@ -215,9 +215,8 @@ public class AllMiniTests extends SetupTest {
 
             OUT.println (template.format(assertPrice));
             // TODO: this statement is incorrect because the data provided by the website does not match the request
-            //assertEquals(assertPrice, newPrice);
+            assertEquals(assertPrice, newPrice);
             jlogger.fine("Checking prices and discounts on goods is complete!");
         }
     }
-
 }
