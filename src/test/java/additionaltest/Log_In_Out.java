@@ -1,65 +1,77 @@
 package additionaltest;
 
-import maintest.SetupTest;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
-import utils.ConfProperties;
-
+import users.TestUser;
+import utils.Info;
+import utils.SetupTest;
 import static org.junit.Assert.assertEquals;
 
 public class Log_In_Out extends SetupTest {
 
-    public void checkUserName (String uName) {
+    public static TestUser user;
+
+    @BeforeClass
+    public static void setup2 () { user = new TestUser(); }
+
+    @AfterClass
+    public static void tearDown2 () { user = null; }
+
+    public static void checkUserName (String uName) {
         String user = profilePage.getUserName();
         System.out.println(user);
         assertEquals(uName, user);
     }
 
     @Test
+    public void startRegistrationAndLogin () {
+        registrationTest();
+        loginTest();
+    }
+
     public void registrationTest () {
         /*
          *      Website registration test.
          *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
-        jlogger.info("Start of registration.");
+        jlogger.info("Start of registration.\n");
 
-        eventDriver.get(ConfProperties.getProperty("loginpage"));
+        eventDriver.get(Info.LOGIN_PAGE_URL);
 
-        registrationForm.inputEmail(ConfProperties.getProperty("email"));
+        registrationForm.inputEmail(user.getEmail());
         registrationForm.clickCreateButton();
-        registrationForm.genderChoice(ConfProperties.getProperty("gender"));
-        registrationForm.inputFirstName(ConfProperties.getProperty("firstname"));
-        registrationForm.inputLastName(ConfProperties.getProperty("lastname"));
-        registrationForm.inputPassword(ConfProperties.getProperty("password"));
-        registrationForm.setDaysOfBirth(ConfProperties.getProperty("birthDays"));
-        registrationForm.setMonthOfBirth(ConfProperties.getProperty("birthMonth"));
-        registrationForm.setYearsOfBirth(ConfProperties.getProperty("birthYear"));
-        registrationForm.setNewsletter(ConfProperties.getChoose("choseNewsLetter"));
-        registrationForm.setSpecialOffers(ConfProperties.getChoose("choseSpecialOffers"));
+        registrationForm.genderChoice(user.getGender());
+        registrationForm.inputFirstName(user.getFirstName());
+        registrationForm.inputLastName(user.getLastName());
+        registrationForm.inputPassword(user.getPassword());
+        registrationForm.setDaysOfBirth(user.getBirthDays());
+        registrationForm.setMonthOfBirth(user.getMonth());
+        registrationForm.setYearsOfBirth(user.getBirthYear());
+        registrationForm.setNewsletter(user.isChoseNewsLetter());
+        registrationForm.setSpecialOffers(user.isChoseSpecialOffers());
         registrationForm.clickSubmitAccount();
-        checkUserName(ConfProperties.getProperty("username"));
+        checkUserName(user.getUsername());
         profilePage.userLogout();
         //loginForm.clickSetupButton();
-
-        jlogger.fine("Registration process completed!");
+        jlogger.fine("Registration process completed!\n");
     }
 
-    @Test
     public void loginTest () {
         /*
          *      Website login test.
          *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
-        jlogger.info("Start logging in to the account.");
+        jlogger.info("Start logging in to the account.\n");
 
-        eventDriver.get(ConfProperties.getProperty("loginpage"));
+        eventDriver.get(Info.LOGIN_PAGE_URL);
 
-        loginForm.inputLogin(ConfProperties.getProperty("email"));
-        loginForm.inputPassword(ConfProperties.getProperty("password"));
+        loginForm.inputLogin(user.getEmail());
+        loginForm.inputPassword(user.getPassword());
         loginForm.clickLoginButton();
-        checkUserName(ConfProperties.getProperty("username"));
+        checkUserName(user.getUsername());
         profilePage.userLogout();
 
-        jlogger.fine("The account login process is complete!");
+        jlogger.fine("The account login process is complete!\n");
     }
-
 }

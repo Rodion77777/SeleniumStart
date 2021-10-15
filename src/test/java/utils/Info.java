@@ -3,6 +3,10 @@ package utils;
 import org.openqa.selenium.WebElement;
 
 public class Info {
+
+    public static final String MAIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/ru/";
+    public static final String LOGIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/ru/authentication?back=my-account";
+
     public static final String RU = "Русский";
     public static final String UA = "Українська";
     public static final String EN = "English";
@@ -34,6 +38,17 @@ public class Info {
     public static final String SHOW12 = "12";
     public static final String SHOW24 = "24";
     public static final String SHOW60 = "60";
+
+    public static final String OPERA_DRIVER = "src/test/java/resources/operadriver_win64/operadriver.exe";
+    public static final String CHROME_DRIVER = "src/test/java/resources/chromedriver_win32/chromedriver.exe";
+    public static final String FIREFOX_DRIVER = "src/test/java/resources/geckodriver-v0.29.1-win64/geckodriver.exe";
+    public static final String TOR_BROWSER = "C:/Program Files/Tor Browser/Browser/firefox.exe";
+    public static final String TOR_PROFILE = "C:/Program Files/Tor Browser/Browser/TorBrowser/Data/Browser/profile.default";
+
+    public static final String PROPERTY_CHROME = "webdriver.chrome.driver";
+    public static final String PROPERTY_OPERA = "webdriver.opera.driver";
+    public static final String PROPERTY_GECKO = "webdriver.gecko.driver";
+    public static final String PROPERTY_MARIONETTE = "webdriver.firefox.marionette";
 
     public static double parseDouble (WebElement price) {
         return Double.parseDouble (price.getText()

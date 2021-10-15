@@ -1,18 +1,17 @@
 package pages;
 
-import maintest.SetupTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.List;
 
+// TODO: adding to the SetupTest2
 public class ProductsObject {
 
     private EventFiringWebDriver eventDriver;
 
-    public ProductsObject (EventFiringWebDriver eventDriver) {
-        SetupTest.jlogger.info("Class constructor \"ProductsObject\"\n");
+    public ProductsObject(EventFiringWebDriver eventDriver) {
         this.eventDriver = eventDriver;
     }
 

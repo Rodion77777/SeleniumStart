@@ -4,8 +4,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import utils.ConfProperties;
 import utils.Info;
+import utils.SetupTest;
 
 import java.io.PrintStream;
 import java.text.DecimalFormat;
@@ -51,7 +51,7 @@ public class AllMiniTests extends SetupTest {
          *      Uncomment one of the lines to change the currency.
          */
 
-        eventDriver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(Info.MAIN_PAGE_URL);
 
         //mainPage.setCurrencyEUR();
         //mainPage.setCurrencyUSD();
@@ -111,7 +111,7 @@ public class AllMiniTests extends SetupTest {
 
         jlogger.info("Start of currency compliance checking.");
 
-        eventDriver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(Info.MAIN_PAGE_URL);
 
         findRequest("dress");
 
@@ -149,7 +149,7 @@ public class AllMiniTests extends SetupTest {
     @Test // point 8
     public void priceSortMatch () {
         jlogger.info("Start of the merchandise sorting compliance check.");
-        eventDriver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(Info.MAIN_PAGE_URL);
 
         findRequest("dress");
 
@@ -175,7 +175,7 @@ public class AllMiniTests extends SetupTest {
     @Test // point 9-10
     public void findDiscount () {
         jlogger.info("The start of a price and discount check on goods.");
-        eventDriver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(Info.MAIN_PAGE_URL);
 
         findRequest("dress");
 

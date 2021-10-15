@@ -1,10 +1,9 @@
 package pages;
 
-import maintest.SetupTest;
+import utils.SetupTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,91 +17,37 @@ public class MainPage {
     private WebDriverWait wait;
     private final Logger LOGGER = SetupTest.jlogger;
 
-    @FindBy(xpath = "//*[@id=\"search_query_top\"]")
-    private WebElement responseField;
-
-    @FindBy(xpath = "//*[@id=\"searchbox\"]/button")
-    private WebElement searchButton;
-
-    @FindBy(xpath = "//*[@id=\"header_logo\"]/a")
-    private WebElement mainPageLink;
-
-    @FindBy(xpath = "//*[@id=\"contact-link\"]")
-    private WebElement contactLink;
-
-    @FindBy(xpath = "//*[@id=\"languages-block-top\"]")
-    private WebElement languages;
-
-    @FindBy(xpath = "//*[@id=\"setCurrency\"]")
-    private WebElement currencySelectButton;
-
-    @FindBy(xpath = "//*[contains(@rel, 'nofollow')]")
-    private WebElement set_currency_button;
-
-    @FindBy(xpath = "//*[@id=\"first-currencies\"]")
-    private WebElement currencyToggle;
-
-    //==================================>>
-
-    @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")
-    private WebElement setCurrencyUAH;
-
-    @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]")
-    private WebElement setCurrencyUSD;
-
-    @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")
-    private WebElement setCurrencyEUR;
-
-    //==================================<<
-
-    @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong")
-    private WebElement currencyText;
-
-    @FindBy(css = "a[title='Войти в учетную запись покупателя']")
-    private WebElement setupButton;
-
-
-
-    /* ====================================================
-     *               Constructor MainPage
-     * ================================================= */
-
-    public MainPage (EventFiringWebDriver eventDriver) {
-        LOGGER.info("Class constructor \"MainPage\"\n");
-        PageFactory.initElements(eventDriver, this);
+    public MainPage(EventFiringWebDriver eventDriver) {
+        LOGGER.info("Class constructor \"MainPage2\"\n");
         this.eventDriver = eventDriver;
         wait = new WebDriverWait(eventDriver, 10);
     }
 
-
-    /* ====================================================
-     *                      Methods
-     * ================================================= */
-
-    public void setRequest(String request) {
+    public void setRequest(String response) {
         LOGGER.info("Clearing the input field and entering a query.\n");
-        responseField.sendKeys(Keys.CONTROL + "a");
-        responseField.sendKeys(Keys.DELETE);
-        responseField.sendKeys(request);
+        WebElement element = eventDriver.findElement(By.xpath("//*[@id=\"search_query_top\"]"));
+        element.sendKeys(Keys.CONTROL + "a");
+        element.sendKeys(Keys.DELETE);
+        element.sendKeys(response);
     }
 
     public void clickSearchButton () {
-        searchButton.click();
+        eventDriver.findElement(By.xpath("//*[@id=\"searchbox\"]/button")).click();
     }
 
     public void getMainPage () {
         LOGGER.info("Switch to the home page.\n");
-        mainPageLink.click();
+        eventDriver.findElement(By.xpath("//*[@id=\"header_logo\"]/a")).click();
     }
 
     public void clickContactLink () {
         LOGGER.info("Switch to the contact link.\n");
-        contactLink.click();
+        eventDriver.findElement(By.xpath("//*[@id=\"contact-link\"]")).click();
     }
 
     public String getLanguages () {
         LOGGER.info("Reading the set interface language.\n");
-        return languages.getText();
+        return eventDriver.findElement(By.xpath("//*[@id=\"languages-block-top\"]")).getText();
     }
 
     public void setLangEnglish () {
@@ -129,58 +74,61 @@ public class MainPage {
 
     public void clickCurrencyButton () {
         LOGGER.info("Сall up the currency selection menu.\n");
-        currencySelectButton.click();
+        eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
     }
 
     public String getCurrency () {
         LOGGER.info("Reading of set currency.\n");
-        return currencyText.getText();
+        return eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/div/strong")).getText();
     }
 
     public void setCurrencyUAH () {
         LOGGER.info("Currency setting: UAH.\n");
-        currencySelectButton.click();
-        setCurrencyUAH.click();
-        wait.until(ExpectedConditions.invisibilityOf(setCurrencyUAH));
+        eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
+        eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")).click();
+        wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")));
     }
 
     // TODO: JScript methods not checked after changes
     public void setCurrencyUAH_JS () {
         LOGGER.info("(executing JavaScript) Currency setting: UAH.\n");
-        eventDriver.executeScript("javascript:setCurrency(1);", set_currency_button);
-        set_currency_button.click();
+        WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
+        eventDriver.executeScript("javascript:setCurrency(1);", button);
+        button.click();
     }
 
     public void setCurrencyUSD () {
         LOGGER.info("Currency setting: USD.\n");
-        currencySelectButton.click();
-        setCurrencyUSD.click();
-        wait.until(ExpectedConditions.invisibilityOf(setCurrencyUSD));
+        eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
+        eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]")).click();
+        wait.until(ExpectedConditions.invisibilityOf(eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]"))));
     }
 
     // TODO: JScript methods not checked after changes
     public void setCurrencyUSD_JS () {
         LOGGER.info("(executing JavaScript) Currency setting: USD.\n");
-        eventDriver.executeScript("javascript:setCurrency(3);", set_currency_button);
-        set_currency_button.click();
+        WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
+        eventDriver.executeScript("javascript:setCurrency(3);", button);
+        button.click();
     }
 
     public void setCurrencyEUR () {
         LOGGER.info("Currency setting: EUR.\n");
-        currencySelectButton.click();
-        setCurrencyEUR.click();
-        wait.until(ExpectedConditions.invisibilityOf(setCurrencyEUR));
+        eventDriver.findElement(By.xpath("//*[@id=\"setCurrency\"]")).click();
+        eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")).click();
+        wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")));
     }
 
     // TODO: JScript methods not checked after changes
     public void setCurrencyEUR_JS () {
         LOGGER.info("(executing JavaScript) Currency setting: EUR.\n");
-        eventDriver.executeScript("javascript:setCurrency(2);", set_currency_button);
-        set_currency_button.click();
+        WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
+        eventDriver.executeScript("javascript:setCurrency(2);", button);
+        button.click();
     }
 
     public void clickSetupButton () {
         LOGGER.info("Calling up the account login window.\n");
-        setupButton.click();
+        eventDriver.findElement(By.xpath("a[title='Войти в учетную запись покупателя']")).click();
     }
 }

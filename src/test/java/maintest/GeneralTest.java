@@ -4,8 +4,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import utils.ConfProperties;
 import utils.Info;
+import utils.SetupTest;
 
 import java.io.PrintStream;
 import java.text.DecimalFormat;
@@ -43,7 +43,7 @@ public class GeneralTest extends SetupTest {
 
     @Test
     public void generalTest () {
-        eventDriver.get(ConfProperties.getProperty("mainpage"));
+        eventDriver.get(Info.MAIN_PAGE_URL);
 
         jlogger.info("Checking currency in prices.\n");
         List<WebElement> productList = productsObject.popItemFinder();
