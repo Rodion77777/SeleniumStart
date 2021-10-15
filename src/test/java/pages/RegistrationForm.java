@@ -3,12 +3,14 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import utils.SetupTest;
 
 public class RegistrationForm {
 
     private EventFiringWebDriver eventDriver;
 
     public RegistrationForm(EventFiringWebDriver eventDriver) {
+        SetupTest.jlogger.info("Class constructor \"RegistrationForm\"\n");
         this.eventDriver = eventDriver;
     }
 

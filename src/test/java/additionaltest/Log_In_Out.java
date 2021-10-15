@@ -33,7 +33,6 @@ public class Log_In_Out extends SetupTest {
     public void registrationTest () {
         /*
          *      Website registration test.
-         *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
         jlogger.info("Start of registration.\n");
 
@@ -60,7 +59,6 @@ public class Log_In_Out extends SetupTest {
     public void loginTest () {
         /*
          *      Website login test.
-         *      To run the test, the registration data in the "conf.properties" file must be filled in!
          */
         jlogger.info("Start logging in to the account.\n");
 

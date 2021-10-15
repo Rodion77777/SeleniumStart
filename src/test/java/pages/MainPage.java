@@ -18,7 +18,7 @@ public class MainPage {
     private final Logger LOGGER = SetupTest.jlogger;
 
     public MainPage(EventFiringWebDriver eventDriver) {
-        LOGGER.info("Class constructor \"MainPage2\"\n");
+        LOGGER.info("Class constructor \"MainPage\"\n");
         this.eventDriver = eventDriver;
         wait = new WebDriverWait(eventDriver, 10);
     }

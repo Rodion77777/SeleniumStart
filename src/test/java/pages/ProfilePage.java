@@ -1,15 +1,15 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import utils.SetupTest;
 
 public class ProfilePage {
 
     private EventFiringWebDriver eventDriver;
 
     public ProfilePage(EventFiringWebDriver eventDriver) {
-        PageFactory.initElements(eventDriver, this);
+        SetupTest.jlogger.info("Class constructor \"ProfilePage\"\n");
         this.eventDriver = eventDriver;
     }
 

@@ -17,7 +17,7 @@ public class ResultSearchPage {
     private final Logger LOGGER = SetupTest.jlogger;
 
     public ResultSearchPage(EventFiringWebDriver eventDriver) {
-        LOGGER.info("Class constructor \"ResultSearchPage2\"\n");
+        LOGGER.info("Class constructor \"ResultSearchPage\"\n");
         this.eventDriver = eventDriver;
         wait = new WebDriverWait(eventDriver, 10);
     }

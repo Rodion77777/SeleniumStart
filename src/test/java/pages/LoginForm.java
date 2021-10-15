@@ -2,12 +2,14 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import utils.SetupTest;
 
 public class LoginForm {
 
     private EventFiringWebDriver eventDriver;
 
     public LoginForm(EventFiringWebDriver eventDriver) {
+        SetupTest.jlogger.info("Class constructor \"LoginForm\"\n");
         this.eventDriver = eventDriver;
     }
 

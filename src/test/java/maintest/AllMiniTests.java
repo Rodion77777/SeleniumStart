@@ -30,7 +30,7 @@ public class AllMiniTests extends SetupTest {
     }
 
     public double getNewOrOldPriceIfPresent (WebElement element) {
-        return productsObject.priceFinder2(element).stream()
+        return productsObject.priceFinder(element).stream()
                 .map(Info::parseDouble)
                 .max(Double::compare)
                 .get();
@@ -59,7 +59,7 @@ public class AllMiniTests extends SetupTest {
         jlogger.info("Checking currency in prices.");
         List<WebElement> productList = productsObject.popItemFinder();
         List<WebElement> productPrice = productList.stream()
-                .map(x -> productsObject.priceFinder2(x).get(0))
+                .map(x -> productsObject.priceFinder(x).get(0))
                 .collect(Collectors.toList());
 
         String currency = mainPage.getCurrency();
@@ -184,7 +184,7 @@ public class AllMiniTests extends SetupTest {
 
         List<WebElement> pProducts = productsObject.itemFinder();
         List<List<WebElement>> pPrice = pProducts.stream()
-                .map(productsObject::priceFinder2)
+                .map(productsObject::priceFinder)
                 .filter(x -> x.size() == 3)
                 .collect(Collectors.toList());
 
