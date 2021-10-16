@@ -2,12 +2,15 @@ package additionaltest;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import users.TestUser;
 import utils.Info;
 import utils.SetupTest;
 import static org.junit.Assert.assertEquals;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Log_In_Out_Test extends SetupTest {
 
     public static TestUser user;
@@ -25,12 +28,7 @@ public class Log_In_Out_Test extends SetupTest {
     }
 
     @Test
-    public void startRegistrationAndLogin () {
-        registrationTest();
-        loginTest();
-    }
-
-    public void registrationTest () {
+    public void test1_registration() {
         /*
          *      Website registration test.
          */
@@ -56,7 +54,8 @@ public class Log_In_Out_Test extends SetupTest {
         jlogger.fine("Registration process completed!\n");
     }
 
-    public void loginTest () {
+    @Test
+    public void test2_login() {
         /*
          *      Website login test.
          */

@@ -10,7 +10,7 @@ public class TestUser {
     private String birthYear = "2000";
     private boolean choseNewsLetter = false;
     private boolean choseSpecialOffers = false;
-    private String email = "example4@gmail.com";
+    private String email = "example6@gmail.com";
     private String password = "Password";
 
     public String getUsername() {
