@@ -48,7 +48,7 @@ public class Log_In_Out_Test extends SetupTest {
         registrationForm.setNewsletter(user.isChoseNewsLetter());
         registrationForm.setSpecialOffers(user.isChoseSpecialOffers());
         registrationForm.clickSubmitAccount();
-        checkUserName(user.getUsername());
+        checkUserName(user.getUserName());
         profilePage.userLogout();
         //loginForm.clickSetupButton();
         jlogger.fine("Registration process completed!\n");
@@ -66,7 +66,7 @@ public class Log_In_Out_Test extends SetupTest {
         loginForm.inputLogin(user.getEmail());
         loginForm.inputPassword(user.getPassword());
         loginForm.clickLoginButton();
-        checkUserName(user.getUsername());
+        checkUserName(user.getUserName());
         profilePage.userLogout();
 
         jlogger.fine("The account login process is complete!\n");
