@@ -41,6 +41,38 @@ public class AllMiniTests extends SetupTest {
         assertEquals(curr, mainPage.getCurrency());
     }
 
+    @Test
+    public void checkNameOfGoods () {
+        jlogger.info("Checking product names against the query.\n");
+        eventDriver.get(Info.MAIN_PAGE_URL);
+
+        String request = "dress";
+        jlogger.log(Level.INFO, "Search request: {0}\n", request);
+        findRequest(request); // point 4
+        resultSearchPage.showALLResults();
+
+        List<WebElement> products = productsObject.itemFinder();
+        List<WebElement> productsName = products.stream()
+                .map(productsObject::nameFinder)
+                .collect(Collectors.toList());
+
+        for (WebElement x : productsName) {
+            // TODO: this statement is incorrect because the data provided by the website does not match the request
+            assertTrue(x.getText().toLowerCase().contains(request.toLowerCase()));
+        }
+    }
+
+    @Test
+    public void changeCurrency_JS_Test () {
+        jlogger.info("Currency change check with JScript.");
+        mainPage.setCurrencyEUR_JS();
+        checkCurrency(Info.EUR);
+        mainPage.setCurrencyUAH_JS();
+        checkCurrency(Info.UAH);
+        mainPage.setCurrencyUSD_JS();
+        checkCurrency(Info.USD);
+    }
+
     @Test // point 1-2
     public void currencyMatching() {
 

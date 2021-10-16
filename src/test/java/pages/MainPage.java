@@ -89,7 +89,6 @@ public class MainPage {
         wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[1]")));
     }
 
-    // TODO: JScript methods not checked after changes
     public void setCurrencyUAH_JS () {
         LOGGER.info("(executing JavaScript) Currency setting: UAH.\n");
         WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
@@ -104,7 +103,6 @@ public class MainPage {
         wait.until(ExpectedConditions.invisibilityOf(eventDriver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[2]"))));
     }
 
-    // TODO: JScript methods not checked after changes
     public void setCurrencyUSD_JS () {
         LOGGER.info("(executing JavaScript) Currency setting: USD.\n");
         WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));
@@ -119,7 +117,6 @@ public class MainPage {
         wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/form/ul/li[3]")));
     }
 
-    // TODO: JScript methods not checked after changes
     public void setCurrencyEUR_JS () {
         LOGGER.info("(executing JavaScript) Currency setting: EUR.\n");
         WebElement button = eventDriver.findElement(By.xpath("//*[contains(@rel, 'nofollow')]"));

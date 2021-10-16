@@ -8,7 +8,7 @@ import utils.Info;
 import utils.SetupTest;
 import static org.junit.Assert.assertEquals;
 
-public class Log_In_Out extends SetupTest {
+public class Log_In_Out_Test extends SetupTest {
 
     public static TestUser user;
 
