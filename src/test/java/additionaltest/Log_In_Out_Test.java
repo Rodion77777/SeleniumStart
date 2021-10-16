@@ -50,7 +50,6 @@ public class Log_In_Out_Test extends SetupTest {
         registrationForm.clickSubmitAccount();
         checkUserName(user.getUserName());
         profilePage.userLogout();
-        //loginForm.clickSetupButton();
         jlogger.fine("Registration process completed!\n");
     }
 

@@ -1,7 +1,11 @@
 package users;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 public class TestUser {
     private String firstName = "Firstname";
@@ -13,6 +17,6 @@ public class TestUser {
     private String birthYear = "2000";
     private boolean choseNewsLetter = false;
     private boolean choseSpecialOffers = false;
-    private String email = "example6@gmail.com";
+    private String email = "example7@gmail.com";
     private String password = "Password";
 }
