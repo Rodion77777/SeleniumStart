@@ -1,15 +1,13 @@
 package additionaltest;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runners.MethodSorters;
 import users.TestUser;
 import utils.Info;
 import utils.SetupTest;
 import static org.junit.Assert.assertEquals;
 
+@Ignore
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Log_In_Out_Test extends SetupTest {
 

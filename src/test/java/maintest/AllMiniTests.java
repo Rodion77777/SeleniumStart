@@ -1,5 +1,7 @@
 package maintest;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -42,6 +44,8 @@ public class AllMiniTests extends SetupTest {
     }
 
     @Test
+    @DisplayName("Checking product names.")
+    @Description("Test to check the name of the goods against the query.")
     public void checkNameOfGoods () {
         jlogger.info("Checking product names against the query.\n");
         eventDriver.get(Info.MAIN_PAGE_URL);
@@ -63,6 +67,8 @@ public class AllMiniTests extends SetupTest {
     }
 
     @Test
+    @DisplayName("Change currency test JS.")
+    @Description("Currency change test via JavaScript.")
     public void changeCurrency_JS_Test () {
         jlogger.info("Currency change check with JScript.");
         mainPage.setCurrencyEUR_JS();
@@ -74,6 +80,8 @@ public class AllMiniTests extends SetupTest {
     }
 
     @Test // point 1-2
+    @DisplayName("Currency matching.")
+    @Description("Currency matching test in popular products.")
     public void currencyMatching() {
 
         /*
@@ -107,6 +115,8 @@ public class AllMiniTests extends SetupTest {
     }
 
     @Test // point 3
+    @DisplayName("Change currency test.")
+    @Description("Currency change test via drop-down list.")
     public void changeCurrencyTest () {
 
         /*
@@ -127,10 +137,13 @@ public class AllMiniTests extends SetupTest {
     }
 
     @Test // point 4
+    @DisplayName("Search of dress")
+    @Description("Check input field")
     public void searchOfDress () {
         jlogger.info("Search engine test");
         mainPage.setRequest("dress");
         mainPage.clickSearchButton();
+        assertEquals("dress", mainPage.getTextFromRequestField());
     }
 
     @Test // point 5-6

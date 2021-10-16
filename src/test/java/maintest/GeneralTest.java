@@ -1,5 +1,6 @@
 package maintest;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
+@Ignore
 public class GeneralTest extends SetupTest {
     private static final PrintStream OUT = System.out;
 

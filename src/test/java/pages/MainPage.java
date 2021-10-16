@@ -23,12 +23,17 @@ public class MainPage {
         wait = new WebDriverWait(eventDriver, 10);
     }
 
-    public void setRequest(String response) {
+    public void setRequest(String request) {
         LOGGER.info("Clearing the input field and entering a query.\n");
         WebElement element = eventDriver.findElement(By.xpath("//*[@id=\"search_query_top\"]"));
         element.sendKeys(Keys.CONTROL + "a");
         element.sendKeys(Keys.DELETE);
-        element.sendKeys(response);
+        element.sendKeys(request);
+    }
+
+    public String getTextFromRequestField () {
+        LOGGER.info("Retrieve text from an input field.\n");
+        return eventDriver.findElement(By.xpath("//*[@id=\"search_query_top\"]")).getAttribute("value");
     }
 
     public void clickSearchButton () {
